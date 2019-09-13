@@ -59,7 +59,8 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-		<div class="col-8" style="border:thick double #2c3e50; border-radius:1rem">
+		<div class="col-8" style="border:thick double #2c3e50; border-radius:1rem; height:200px;
+		background-color:#ffffff; margin-bottom:1rem">
       		<!-- Masthead Avatar Image -->
       		<img class="masthead-avatar mb-5" src="resources/img/avataaars.svg" alt="">
       	</div>

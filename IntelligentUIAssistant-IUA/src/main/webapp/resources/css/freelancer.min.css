@@ -6975,7 +6975,7 @@ opacity
 
 a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover
 	{
-	background-color: #148f77 !important
+	background-color: #243e55 !important
 }
 
 .bg-secondary {
@@ -10372,8 +10372,8 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media ( min-width :992px) {
 	#mainNav {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
+		padding-top: 1.0rem;
+		padding-bottom: 1.0rem;
 		-webkit-transition: padding-top .3s, padding-bottom .3s;
 		transition: padding-top .3s, padding-bottom .3s
 	}
@@ -10423,7 +10423,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media ( min-width :992px) {
 	.masthead {
-		padding-top: calc(6rem + 104px);
+		padding-top: calc(2rem + 104px);
 		padding-bottom: 6rem
 	}
 	.masthead .masthead-heading {
