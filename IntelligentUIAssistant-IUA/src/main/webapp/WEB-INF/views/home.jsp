@@ -21,6 +21,8 @@
   <!-- Theme CSS -->
   <link href="resources/css/freelancer.min.css" rel="stylesheet">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 	<title>IUA 메인 화면</title>
 	
 </head>
@@ -59,10 +61,15 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-		<div class="col-8" style="border:thick double #2c3e50; border-radius:1rem; height:200px;
-		background-color:#ffffff; margin-bottom:1rem">
-      		<!-- Masthead Avatar Image -->
-      		<img class="masthead-avatar mb-5" src="resources/img/avataaars.svg" alt="">
+		<div class="row col-12" style="text-align:center">
+			<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
+			background-color:#ffffff; margin-bottom:1rem; margin-right:1rem;">
+	      		<!-- Masthead Avatar Image -->
+	      		<i class="fa fa-file"></i>
+	      	</div>
+	      	<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
+			background-color:#ffffff; margin-bottom:1rem; margin-left:1rem">
+			</div>
       	</div>
 
       <!-- Masthead Heading -->
