@@ -22,6 +22,7 @@
   <link href="resources/css/freelancer.min.css" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
   
 	<title>IUA 메인 화면</title>
 	
@@ -65,7 +66,7 @@
 			<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
 			background-color:#ffffff; margin-bottom:1rem; margin-right:1rem;">
 	      		<!-- Masthead Avatar Image -->
-	      		<i class="fa fa-file"></i>
+	      		<i class="fa fa-file" style="font-size:48px; color:#0f3675; padding-top:110px"></i>
 	      	</div>
 	      	<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
 			background-color:#ffffff; margin-bottom:1rem; margin-left:1rem">
