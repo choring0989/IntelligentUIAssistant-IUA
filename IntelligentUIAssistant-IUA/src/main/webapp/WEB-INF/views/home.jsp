@@ -40,7 +40,7 @@
       </div>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
-        <i class="fas fa-bars"></i>
+        <i class="fa fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -64,23 +64,23 @@
 
 		<div class="row col-12" style="text-align:center">
 			<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
-			background-color:#ffffff; margin-bottom:1rem; margin-right:1rem;">
+			background-color:#ffffff; margin:auto;">
 	      		<!-- Masthead Avatar Image -->
 	      		<i class="fa fa-file" style="font-size:48px; color:#0f3675; padding-top:110px"></i>
 	      	</div>
 	      	<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
-			background-color:#ffffff; margin-bottom:1rem; margin-left:1rem">
+			background-color:#ffffff; margin:auto;">
 			</div>
       	</div>
 
       <!-- Masthead Heading -->
-      <h3 class="masthead-heading text-uppercase mb-0" style="font-size:2.5rem">분리하려는 이미지를 업로드 해 주세요!</h3>
+      <h3 class="masthead-heading text-uppercase mb-0" style="font-size:2.5rem; margin:auto; padding-top:10px;" >분리하려는 이미지를 업로드 해 주세요!</h3>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -102,7 +102,7 @@
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -115,7 +115,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/cabin.png" alt="">
@@ -127,7 +127,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/cake.png" alt="">
@@ -139,7 +139,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/circus.png" alt="">
@@ -151,7 +151,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/game.png" alt="">
@@ -163,7 +163,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/safe.png" alt="">
@@ -175,7 +175,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+                <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="resources/img/portfolio/submarine.png" alt="">
@@ -199,7 +199,7 @@
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -217,7 +217,7 @@
       <!-- About Section Button -->
       <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
+          <i class="fa fa-download mr-2"></i>
           Free Download!
         </a>
       </div>
@@ -236,7 +236,7 @@
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -302,16 +302,16 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
           <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
+            <i class="fa fa-fw fa-facebook-f"></i>
           </a>
           <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
+            <i class="fa fa-fw fa-twitter"></i>
           </a>
           <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
+            <i class="fa fa-fw fa-linkedin-in"></i>
           </a>
           <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
+            <i class="fa fa-fw fa-dribbble"></i>
           </a>
         </div>
 
@@ -348,7 +348,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -361,7 +361,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -370,7 +370,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
@@ -387,7 +387,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -400,7 +400,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -409,7 +409,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
@@ -426,7 +426,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -439,7 +439,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -448,7 +448,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
@@ -465,7 +465,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -478,7 +478,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -487,7 +487,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
@@ -504,7 +504,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -517,7 +517,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -526,7 +526,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
@@ -543,7 +543,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
           </span>
         </button>
         <div class="modal-body text-center">
@@ -556,7 +556,7 @@
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
                   <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
@@ -565,7 +565,7 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
+                  <i class="fa fa-times fa-fw"></i>
                   Close Window
                 </button>
               </div>
