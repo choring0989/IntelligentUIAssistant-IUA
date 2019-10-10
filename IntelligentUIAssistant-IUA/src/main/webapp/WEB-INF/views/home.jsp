@@ -13,6 +13,7 @@
 
   <!-- Contact Form JavaScript -->
   <script src="resources/js/jqBootstrapValidation.js"></script>
+  <script src="resources/js/jqBootstrapValidation.min.js"></script>
   <script src="resources/js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
@@ -22,15 +23,28 @@
   <link href="resources/css/freelancer.min.css" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/yourcode.js"></script>
   
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  
+<!-- include jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<!-- include FilePond library -->
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+
+<!-- include FilePond plugins -->
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+
+<!-- include FilePond jQuery adapter -->
+<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+
 	<title>IUA 메인 화면</title>
 	
 </head>
 
 
 <body id="page-top">
-
+<!-- 파일폰드 -->
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
@@ -65,13 +79,38 @@
 		<div class="row col-12" style="text-align:center">
 			<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
 			background-color:#ffffff; margin:auto;">
-	      		<!-- Masthead Avatar Image -->
-	      		<i class="fa fa-file" style="font-size:48px; color:#0f3675; padding-top:110px"></i>
+	      		<input type="file" class="my-pond" name="filepond"/>
+	      		<!--<i class="fa fa-file" style="font-size:48px; color:#0f3675;"></i>-->
 	      	</div>
 	      	<div class="col-5" style="border:thick double #2c3e50; border-radius:1rem; height:300px;
 			background-color:#ffffff; margin:auto;">
 			</div>
       	</div>
+      	
+      	<script>
+      	$(function(){
+      	  
+      	    // First register any plugins
+      	    $.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+
+      	    // Turn input element into a pond
+      	    $('.my-pond').filepond();
+
+      	    // Set allowMultiple property to true
+      	    $('.my-pond').filepond('allowMultiple', true);
+      	  
+      	    // Listen for addfile event
+      	    $('.my-pond').on('FilePond:addfile', function(e) {
+      	        console.log('file added event', e);
+      	    });
+
+      	    // Manually add a file using the addfile method
+      	    $('.my-pond').first().filepond('addFile', 'index.html').then(function(file){
+      	      console.log('file added', file);
+      	    });
+      	  
+      	  });
+		</script>
 
       <!-- Masthead Heading -->
       <h3 class="masthead-heading text-uppercase mb-0" style="font-size:2.5rem; margin:auto; padding-top:10px;" >분리하려는 이미지를 업로드 해 주세요!</h3>
