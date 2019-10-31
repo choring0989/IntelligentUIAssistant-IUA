@@ -15,6 +15,7 @@
   <script src="resources/js/jqBootstrapValidation.js"></script>
   <script src="resources/js/jqBootstrapValidation.min.js"></script>
   <script src="resources/js/contact_me.js"></script>
+  <!-- sumin!! -->
 
   <!-- Custom scripts for this template -->
   <script src="resources/js/freelancer.min.js"></script>
@@ -38,19 +39,19 @@
 <!-- include FilePond jQuery adapter -->
 <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
-	<title>IUA 메인 화면</title>
+	<title>IUA 硫붿씤 �솕硫�</title>
 	
 </head>
 
 
 <body id="page-top">
-<!-- 파일폰드 -->
+<!-- �뙆�씪�룿�뱶 -->
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
 	      <div>
 	      <a class="navbar-brand js-scroll-trigger" href="#page-top">Intelligent UI Assistant - IUA</a>
-	      <h6 style="color:white">UI 컴포넌트 분리 작업을 도와드립니다!</h6>
+	      <h6 style="color:white">UI 而댄룷�꼳�듃 遺꾨━ �옉�뾽�쓣 �룄���뱶由쎈땲�떎!</h6>
       </div>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -113,7 +114,7 @@
 		</script>
 
       <!-- Masthead Heading -->
-      <h3 class="masthead-heading text-uppercase mb-0" style="font-size:2.5rem; margin:auto; padding-top:10px;" >분리하려는 이미지를 업로드 해 주세요!</h3>
+      <h3 class="masthead-heading text-uppercase mb-0" style="font-size:2.5rem; margin:auto; padding-top:10px;" >遺꾨━�븯�젮�뒗 �씠誘몄�瑜� �뾽濡쒕뱶 �빐 二쇱꽭�슂!</h3>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
