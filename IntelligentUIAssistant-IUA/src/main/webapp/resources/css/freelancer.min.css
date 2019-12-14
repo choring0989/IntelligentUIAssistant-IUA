@@ -3117,8 +3117,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-	color: #f8f9fa;
-	border-color: #f8f9fa
+	color: #7fb9b9;
+	border-color: #7fb9b9
 }
 
 .btn-outline-light:hover {

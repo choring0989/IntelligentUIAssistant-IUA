@@ -79,13 +79,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-						href="#portfolio">Portfolio</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-						href="#about">About</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-						href="#contact">Contact</a></li>
+						href="#portfolio">예시 이미지</a></li>
 				</ul>
 			</div>
 		</div>
@@ -98,12 +92,13 @@
 			<div class="row col-12" style="text-align: center">
 				<div class="col-5"
 					style="border: thick double #2c3e50; border-radius: 1rem; background-color: #ffffff;">
-					<input type="file" id="fileupload">
-					<button id="uploadClick">파일 업로드</button>
-					<span id="progress"></span>
 					<!--<input type="file" class="my-pond" name="filepond" /> -->
 					<!--<i class="fa fa-file" style="font-size:48px; color:#0f3675;"></i>-->
-					<img id='iimage'></img>
+					<img id='iimage' style="height: 250px; width: 400px"></img> 
+					<input type="file" id="fileupload" class="btn btn-l btn-outline-light">
+					<button id="uploadClick" class='btn btn-l btn-outline-light'>파일
+						업로드</button>
+					<span id="progress"></span>
 				</div>
 				<div class="col-5"
 					style="border: thick double #2c3e50; border-radius: 1rem; height: 300px; background-color: #ffffff; margin: auto;">
@@ -112,84 +107,80 @@
 
 			<script>
 			var firebaseConfig = {
-					apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
-					authDomain : "intelligentuiassistant-iua.firebaseapp.com",
-					databaseURL : "https://intelligentuiassistant-iua.firebaseio.com",
-					projectId : "intelligentuiassistant-iua",
-					storageBucket : "intelligentuiassistant-iua.appspot.com",
-					messagingSenderId : "913781734373",
-					appId : "1:913781734373:web:15ea08e4d78b26122b8d0c",
-					measurementId : "G-VYG4RZRNBY"
-				};
-				// Initialize Firebase
-				firebase.initializeApp(firebaseConfig);
-				firebase.analytics();
-				console.log(firebase);
+				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
+				authDomain : "intelligentuiassistant-iua.firebaseapp.com",
+				databaseURL : "https://intelligentuiassistant-iua.firebaseio.com",
+				projectId : "intelligentuiassistant-iua",
+				storageBucket : "intelligentuiassistant-iua.appspot.com",
+				messagingSenderId : "913781734373",
+				appId : "1:913781734373:web:15ea08e4d78b26122b8d0c",
+				measurementId : "G-VYG4RZRNBY"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			console.log(firebase);
 
-				// Create a root reference
-				var storageRef = firebase.storage().ref();
-				
-				$('#uploadClick').on(
-						'click',
-						function() {
-							var file = $("#fileupload")[0].files[0];
-							var filename = file.name;
-							var reader = new FileReader();
-							reader.onload = function(e) {
-								// 변환이 끝나면 reader.result로 옵니다.
-								var base64data = reader.result;
-								console.log(base64data);
-								document.getElementById('iimage').src = base64data;
-								// 여기서 구조가 중요합니다.
-								// 구조는 「data: 파일 타입; base64, 데이터」입니다.
-								var data = base64data.split(',')[1];
-								storageRef.child('images/' + filename).putString(base64data, 'data_url').then(function(snapshot) {
-									console.log('Uploaded a blob or file!');
-								});
-								//data가 이제 데이터 입니다.
-								//사실 ajax로 넘길때는 큰 사이즈 설정해서 데이터를 넘기면 빠르게 되는데
-								//예제이다보니 프로그래스바 구조를 나타내기 위해 문자 1개 단위로 보내겠습니다.
-								var sendsize = 1024;
-								var filelength = data.length;
-								var pos = 0;
-								var upload = function() {
-									$.ajax({
-										type : 'POST',
-										dataType : 'json',
-										data : {
-											filename : filename,
-											filelength : filelength,
-											filepos : pos,
-											data : data.substring(pos, pos
-													+ sendsize)
-										},
-										url : './upload',
-										success : function(data) {
-											console.log("성공")
-											// 전체가 전송될 때까지
-											if (pos < filelength) {
-												// 재귀
-												setTimeout(upload, 1);
-											}
-											pos = pos + sendsize;
-											if (pos > filelength) {
-												pos = filelength;
-											}
-											$('#progress').text(
-													pos + ' / ' + filelength);
-										},
-										error : function(jqXHR, textStatus,
-												errorThrown) {
-										},
-										complete : function(jqXHR, textStatus) {
-										}
-									});
-								};
-								setTimeout(upload, 1);
-							}
-							// base64로 넘깁니다.
-							reader.readAsDataURL(file);
+			// Create a root reference
+			var storageRef = firebase.storage().ref();
+		
+			$('#uploadClick').on('click',
+				function() {
+					var file = $("#fileupload")[0].files[0];
+					var filename = file.name;
+					var reader = new FileReader();
+					reader.onload = function(e) {
+						// 변환이 끝나면 reader.result로 옵니다.
+						var base64data = reader.result;
+						console.log(base64data);
+						document.getElementById('iimage').src = base64data;
+						// 여기서 구조가 중요합니다.
+						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
+						var data = base64data.split(',')[1];
+						storageRef.child('images/' + filename).putString(base64data,'data_url').then(
+						function(snapshot) {
+							console.log('Uploaded a blob or file!');
 						});
+						//data가 이제 데이터 입니다.
+						//사실 ajax로 넘길때는 큰 사이즈 설정해서 데이터를 넘기면 빠르게 되는데
+						//예제이다보니 프로그래스바 구조를 나타내기 위해 문자 1개 단위로 보내겠습니다.
+						var sendsize = 1024;
+						var filelength = data.length;
+						var pos = 0;
+						var upload = function() {
+							$.ajax({
+								type : 'POST',
+								dataType : 'json',
+								data : {
+									filename : filename,
+									filelength : filelength,
+									filepos : pos,
+									data : data.substring(pos,pos+sendsize)
+								},
+								url : './upload',
+								success : function(data) {
+									console.log("성공")
+									// 전체가 전송될 때까지
+									if (pos < filelength) {
+										// 재귀
+										setTimeout(upload,1);
+									}
+									pos = pos + sendsize;
+									if (pos > filelength) {
+										pos = filelength;}
+									$('#progress').text(pos+ ' / '+ filelength);
+								},
+								error : function(jqXHR,textStatus,errorThrown) {
+								},
+								complete : function(jqXHR,textStatus) {
+								}
+							});
+						};
+						setTimeout(upload, 1);
+					}
+					// base64로 넘깁니다.
+					reader.readAsDataURL(file);
+				});
 				/*
 					// Your web app's Firebase configuration
 					var firebaseConfig = {
@@ -301,7 +292,8 @@
 
 			<!-- Portfolio Section Heading -->
 			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+				class="page-section-heading text-center text-uppercase text-secondary mb-0">예시
+				이미지</h2>
 
 			<!-- Icon Divider -->
 			<div class="divider-custom">
@@ -413,124 +405,6 @@
 
 			</div>
 			<!-- /.row -->
-
-		</div>
-	</section>
-
-	<!-- About Section -->
-	<section class="page-section bg-primary text-white mb-0" id="about">
-		<div class="container">
-
-			<!-- About Section Heading -->
-			<h2
-				class="page-section-heading text-center text-uppercase text-white">About</h2>
-
-			<!-- Icon Divider -->
-			<div class="divider-custom divider-light">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fa fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
-			</div>
-
-			<!-- About Section Content -->
-			<div class="row">
-				<div class="col-lg-4 ml-auto">
-					<p class="lead">Freelancer is a free bootstrap theme created by
-						Start Bootstrap. The download includes the complete source files
-						including HTML, CSS, and JavaScript as well as optional SASS
-						stylesheets for easy customization.</p>
-				</div>
-				<div class="col-lg-4 mr-auto">
-					<p class="lead">You can create your own custom avatar for the
-						masthead, change the icon in the dividers, and add your email
-						address to the contact form to make it fully functional!</p>
-				</div>
-			</div>
-
-			<!-- About Section Button -->
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light"
-					href="https://startbootstrap.com/themes/freelancer/"> <i
-					class="fa fa-download mr-2"></i> Free Download!
-				</a>
-			</div>
-
-		</div>
-	</section>
-
-	<!-- Contact Section -->
-	<section class="page-section" id="contact">
-		<div class="container">
-
-			<!-- Contact Section Heading -->
-			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact
-				Me</h2>
-
-			<!-- Icon Divider -->
-			<div class="divider-custom">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fa fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
-			</div>
-
-			<!-- Contact Section Form -->
-			<div class="row">
-				<div class="col-lg-8 mx-auto">
-					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-					<form name="sentMessage" id="contactForm" novalidate="novalidate">
-						<div class="control-group">
-							<div
-								class="form-group floating-label-form-group controls mb-0 pb-2">
-								<label>Name</label> <input class="form-control" id="name"
-									type="text" placeholder="Name" required="required"
-									data-validation-required-message="Please enter your name.">
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<div
-								class="form-group floating-label-form-group controls mb-0 pb-2">
-								<label>Email Address</label> <input class="form-control"
-									id="email" type="email" placeholder="Email Address"
-									required="required"
-									data-validation-required-message="Please enter your email address.">
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<div
-								class="form-group floating-label-form-group controls mb-0 pb-2">
-								<label>Phone Number</label> <input class="form-control"
-									id="phone" type="tel" placeholder="Phone Number"
-									required="required"
-									data-validation-required-message="Please enter your phone number.">
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<div class="control-group">
-							<div
-								class="form-group floating-label-form-group controls mb-0 pb-2">
-								<label>Message</label>
-								<textarea class="form-control" id="message" rows="5"
-									placeholder="Message" required="required"
-									data-validation-required-message="Please enter a message."></textarea>
-								<p class="help-block text-danger"></p>
-							</div>
-						</div>
-						<br>
-						<div id="success"></div>
-						<div class="form-group">
-							<button type="submit" class="btn btn-primary btn-xl"
-								id="sendMessageButton">Send</button>
-						</div>
-					</form>
-				</div>
-			</div>
 
 		</div>
 	</section>
