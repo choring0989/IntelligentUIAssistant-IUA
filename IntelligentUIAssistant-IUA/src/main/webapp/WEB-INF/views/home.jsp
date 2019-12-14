@@ -90,18 +90,20 @@
 		<div class="container d-flex align-items-center flex-column">
 
 			<div class="row col-12" style="text-align: center">
-				<div class="col-5"
-					style="border: thick double #2c3e50; border-radius: 1rem; background-color: #ffffff;">
+				<div class="col-6"
+					style="border: thick double #2c3e50; border-radius: 0.2rem; background-color: #ffffff;">
 					<!--<input type="file" class="my-pond" name="filepond" /> -->
 					<!--<i class="fa fa-file" style="font-size:48px; color:#0f3675;"></i>-->
-					<img id='iimage' style="height: 250px; width: 400px"></img> 
-					<input type="file" id="fileupload" class="btn btn-l btn-outline-light">
-					<button id="uploadClick" class='btn btn-l btn-outline-light'>파일
-						업로드</button>
+					<div class="row">
+						<input type="file" id="fileupload" class="btn btn-l btn-outline-light">
+						<button id="uploadClick" class='btn btn-l btn-outline-light'>파일
+							업로드</button>
+					</div>
+					<img id='iimage' style="max-height: 250px; max-width: 400px"></img>
 					<span id="progress"></span>
 				</div>
-				<div class="col-5"
-					style="border: thick double #2c3e50; border-radius: 1rem; height: 300px; background-color: #ffffff; margin: auto;">
+				<div class="col-6"
+					style="border: thick double #2c3e50; border-radius: 0.2rem; height: 310px; background-color: #ffffff; margin: auto;">
 				</div>
 			</div>
 
@@ -123,24 +125,27 @@
 
 			// Create a root reference
 			var storageRef = firebase.storage().ref();
-		
-			$('#uploadClick').on('click',
+			var filename, base64data;
+			
+			$('#fileupload').on('propertychange change',
 				function() {
 					var file = $("#fileupload")[0].files[0];
-					var filename = file.name;
+					filename = file.name;
 					var reader = new FileReader();
 					reader.onload = function(e) {
 						// 변환이 끝나면 reader.result로 옵니다.
-						var base64data = reader.result;
+						base64data = reader.result;
 						console.log(base64data);
 						document.getElementById('iimage').src = base64data;
 						// 여기서 구조가 중요합니다.
 						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
 						var data = base64data.split(',')[1];
+						/*
 						storageRef.child('images/' + filename).putString(base64data,'data_url').then(
 						function(snapshot) {
-							console.log('Uploaded a blob or file!');
+							console.log('Uploaded a file!');
 						});
+						*/
 						//data가 이제 데이터 입니다.
 						//사실 ajax로 넘길때는 큰 사이즈 설정해서 데이터를 넘기면 빠르게 되는데
 						//예제이다보니 프로그래스바 구조를 나타내기 위해 문자 1개 단위로 보내겠습니다.
@@ -181,6 +186,15 @@
 					// base64로 넘깁니다.
 					reader.readAsDataURL(file);
 				});
+			
+			$('#uploadClick').on('click', function() {
+				var rd = Math.floor(Math.random() * (120 - 1)) + 1;
+				storageRef.child('images/'+rd+filename).putString(base64data,'data_url').then(
+					function(snapshot) {
+						console.log('Uploaded a file!');
+						var alt = alert("업로드 완료!");
+					});
+			});
 				/*
 					// Your web app's Firebase configuration
 					var firebaseConfig = {
