@@ -86,7 +86,7 @@
 	</nav>
 
 	<!-- Masthead -->
-	<header class="masthead bg-primary text-white text-center">
+	<header class="masthead bg-primary text-black text-center">
 		<div class="container d-flex align-items-center flex-column">
 
 			<div class="row col-12" style="text-align: center">
@@ -104,6 +104,11 @@
 				</div>
 				<div class="col-6"
 					style="border: thick double #2c3e50; border-radius: 0.2rem; height: 310px; background-color: #ffffff; margin: auto;">
+					<div class="row">
+						<button id="result" class='btn btn-l btn-outline-light'>결과 다운로드</button>
+					</div>
+					<img id='output' style="max-height: 250px; max-width: 400px"></img>
+					<span id="progress"></span>
 				</div>
 			</div>
 
@@ -193,90 +198,14 @@
 					function(snapshot) {
 						console.log('Uploaded a file!');
 						var alt = alert("업로드 완료!");
+						document.getElementById('output').src = 'resources/img/train.PNG';
 					});
 			});
-				/*
-					// Your web app's Firebase configuration
-					var firebaseConfig = {
-						apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
-						authDomain : "intelligentuiassistant-iua.firebaseapp.com",
-						databaseURL : "https://intelligentuiassistant-iua.firebaseio.com",
-						projectId : "intelligentuiassistant-iua",
-						storageBucket : "intelligentuiassistant-iua.appspot.com",
-						messagingSenderId : "913781734373",
-						appId : "1:913781734373:web:15ea08e4d78b26122b8d0c",
-						measurementId : "G-VYG4RZRNBY"
-					};
-					// Initialize Firebase
-					firebase.initializeApp(firebaseConfig);
-					firebase.analytics();
-					console.log(firebase);
-
-					// Create a root reference
-					var storageRef = firebase.storage().ref();
-
-					//blob = new Blob(new Uint8Array(data), { type: 'image/png' });
-					FilePond.registerPlugin(FilePondPluginImagePreview);
-					// Register the plugin with FilePond
-					FilePond.registerPlugin(FilePondPluginFileEncode);
-					// Get a reference to the file input element
-					const inputElement = document
-							.querySelector('.my-pond');
-					// Create the FilePond instance
-					const pond = FilePond.create(inputElement);
-					// Request encoded data
-					console.log("파일폰드", pond);
-					
-					 // Request encoded data
-				    inputElement.addEventListener('FilePond:addfile', e => {
-				    	console.log('hier:'+$('input[name=filepond]').val());
-				        if (err) {
-				            console.warn(err);
-				            return;
-				        }        
-				        const dataURL = item.getFileEncodeDataURL();
-				        const base64String = item.getFileEncodeBase64String();
-				    });
-
-					$(function() {
-
-						// First register any plugins
-						$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
-
-						// Turn input element into a pond
-						$('.my-pond').filepond();
-
-						// Set allowMultiple property to true
-						$('.my-pond').filepond('allowMultiple', false);
-
-						$('.my-pond').on('FilePond:addfile', function(e) {
-							console.log('file added event', e);
-							console.log('hier:'+$('input[name=filepond]').val());
-
-							const dataURL = e.getFileEncodeDataURL();
-							const base64String = e.getFileEncodeBase64String();
-							console.log(base64String);
-						});
-					});
-
-						/*
-						
-						// Listen for addfile event
-						$('.my-pond').on('FilePond:addfile', function(e) {
-							console.log('file added event', e);
-							storageRef.put(e).then(function(snapshot) {
-								console.log('Uploaded a blob or file!');
-							});
-						});
-
-						// Manually add a file using the addfile method
-						$('.my-pond').first().filepond('addFile', 'views/sadpig.png')
-								.then(function(file) {
-									console.log('file added', file);
-								});
-
-					});
-				 */
+			
+			$('#result').on('click', function() {
+				location.href='https://firebasestorage.googleapis.com/v0/b/intelligentuiassistant-iua.appspot.com/o/output.zip?alt=media&token=c449112a-a9a0-449f-b0ac-06a6ec8db89f';
+			});
+			
 			</script>
 
 			<!-- Masthead Heading -->
@@ -285,7 +214,7 @@
 				이미지를 업로드 해 주세요!</h3>
 
 			<!-- Icon Divider -->
-			<div class="divider-custom divider-light">
+			<div class="divider-custom divider-dark">
 				<div class="divider-custom-line"></div>
 				<div class="divider-custom-icon">
 					<i class="fa fa-star"></i>
