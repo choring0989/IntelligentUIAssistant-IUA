@@ -113,6 +113,7 @@
 			</div>
 
 			<script>
+			//fb
 			var firebaseConfig = {
 				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
 				authDomain : "intelligentuiassistant-iua.firebaseapp.com",
