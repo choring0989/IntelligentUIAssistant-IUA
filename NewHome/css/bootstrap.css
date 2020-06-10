@@ -277,6 +277,40 @@ input {
     overflow: visible
 }
 
+.file_input label {
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+	background-image: linear-gradient(to right, #4dabff 0%, #62ddff 48%, #4dabff 100%);
+    background-size: 200% auto;
+	padding: 0px 35px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 5px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	cursor: pointer;
+}
+.file_input label input {
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+.file_input input[type=text] {
+    vertical-align:middle;
+    display:inline-block;
+    width:300px;
+    height:48px;
+    line-height:28px;
+    font-size:11px;
+    padding:0;
+    border:0;
+    border:1px solid #4dabff;
+}
+
 button,
 select {
     text-transform: none

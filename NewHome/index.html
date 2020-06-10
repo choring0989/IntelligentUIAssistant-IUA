@@ -17,7 +17,32 @@
         <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- file pond-->
+		<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+
+		<!-- include jQuery library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+		<!-- include FilePond library -->
+		<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+
+		<!-- include FilePond plugins -->
+		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+
+		<!-- include FilePond jQuery adapter -->
+		<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+		<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+		<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
     </head>
     <body>
         
@@ -98,13 +123,21 @@
 									<div class="left_side_text">
 										<h3>We’ve made a life <br />that will change you</h3>
 										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<p>아래 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!</p>
+										<div class="file_input">
+											<label>
+												Select File
+												<input type="file" id="fileupload" onchange="javascript:document.getElementById('file_route').value=this.value">
+											</label>
+											<input type="text" readonly="readonly" title="File Route" id="file_route">
+										</div>
+										<button id="uploadClick" class='main_btn' style="margin-top: 2px; border: hidden;">File Upload</button>
+										<button id="result" class='main_btn' style="margin-top: 2px; border: hidden;">Download</button>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img-fluid" src="img/chart.jpg" alt="">
+										<img class="img-fluid" src="img/chart.jpg" alt="" id='iimage' style="max-height: 600px; max-width: 550px">
 									</div>
 								</div>
 							</div>
@@ -129,7 +162,94 @@
 					</div>
         		</div>
         	</div>
-        </section>
+		</section>
+		
+		<script>
+			//fb
+			var firebaseConfig = {
+				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
+				authDomain : "intelligentuiassistant-iua.firebaseapp.com",
+				databaseURL : "https://intelligentuiassistant-iua.firebaseio.com",
+				projectId : "intelligentuiassistant-iua",
+				storageBucket : "intelligentuiassistant-iua.appspot.com",
+				messagingSenderId : "913781734373",
+				appId : "1:913781734373:web:15ea08e4d78b26122b8d0c",
+				measurementId : "G-VYG4RZRNBY"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			console.log(firebase);
+
+			// Create a root reference
+			var storageRef = firebase.storage().ref();
+			var filename, base64data;
+			
+			$('#fileupload').on('propertychange change',
+				function() {
+					var file = $("#fileupload")[0].files[0];
+					filename = file.name;
+					var reader = new FileReader();
+					reader.onload = function(e) {
+						// 변환이 끝나면 reader.result로 옵니다.
+						base64data = reader.result;
+						console.log(base64data);
+						document.getElementById('iimage').src = base64data;
+						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
+						var data = base64data.split(',')[1];
+						var sendsize = 1024;
+						var filelength = data.length;
+						var pos = 0;
+						var upload = function() {
+							$.ajax({
+								type : 'POST',
+								dataType : 'json',
+								data : {
+									filename : filename,
+									filelength : filelength,
+									filepos : pos,
+									data : data.substring(pos,pos+sendsize)
+								},
+								url : './upload',
+								success : function(data) {
+									console.log("성공")
+									// 전체가 전송될 때까지
+									if (pos < filelength) {
+										// 재귀
+										setTimeout(upload,1);
+									}
+									pos = pos + sendsize;
+									if (pos > filelength) {
+										pos = filelength;}
+									$('#progress').text(pos+ ' / '+ filelength);
+								},
+								error : function(jqXHR,textStatus,errorThrown) {
+								},
+								complete : function(jqXHR,textStatus) {
+								}
+							});
+						};
+						setTimeout(upload, 1);
+					}
+					// base64로 넘깁니다.
+					reader.readAsDataURL(file);
+				});
+			
+			$('#uploadClick').on('click', function() {
+				var rd = Math.floor(Math.random() * (120 - 1)) + 1;
+				storageRef.child('images/'+rd+filename).putString(base64data,'data_url').then(
+					function(snapshot) {
+						console.log('Uploaded a file!');
+						var alt = alert("업로드 완료!");
+						document.getElementById('output').src = 'resources/img/train.PNG';
+					});
+			});
+			
+			$('#result').on('click', function() {
+				location.href='https://firebasestorage.googleapis.com/v0/b/intelligentuiassistant-iua.appspot.com/o/output.zip?alt=media&token=c449112a-a9a0-449f-b0ac-06a6ec8db89f';
+			});
+			
+			</script>
         <!--================End Made Life Area =================-->
         
         <!--================Footer Area =================-->
