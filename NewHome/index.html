@@ -123,13 +123,14 @@
 									<div class="left_side_text">
 										<h3>We’ve made a life <br />that will change you</h3>
 										<h6>We are here to listen from you deliver exellence</h6>
-										<p>아래 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!</p>
+										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!</p>
+
 										<div class="file_input">
 											<label>
 												Select File
 												<input type="file" id="fileupload" onchange="javascript:document.getElementById('file_route').value=this.value">
 											</label>
-											<input type="text" readonly="readonly" title="File Route" id="file_route">
+											<input type="text" readonly="readonly" title="File Route" id="file_route" value=" File route">
 										</div>
 										<button id="uploadClick" class='main_btn' style="margin-top: 2px; border: hidden;">File Upload</button>
 										<button id="result" class='main_btn' style="margin-top: 2px; border: hidden;">Download</button>
@@ -165,6 +166,31 @@
 		</section>
 		
 		<script>
+			/*
+			$(function(){
+			
+				// First register any plugins
+				$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
+
+				// Turn input element into a pond
+				$('.my-pond').filepond();
+
+				// Set allowMultiple property to true
+				$('.my-pond').filepond('allowMultiple', true);
+
+				// Listen for addfile event
+				$('.my-pond').on('FilePond:addfile', function(e) {
+					console.log('file added event', e);
+				});
+
+				// Manually add a file using the addfile method
+				$('.my-pond').first().filepond('addFile', 'index.html').then(function(file){
+					console.log('file added', file);
+				});
+
+			});
+			*/
+
 			//fb
 			var firebaseConfig = {
 				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
