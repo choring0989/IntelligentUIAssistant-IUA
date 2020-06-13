@@ -26,7 +26,7 @@ def MouseLeftClick(event, x, y, flags, param):
     # 수정하고 싶은 이미지 경로
 
 
-image = cv2.imread('edit_test/05.png')
+image = cv2.imread('edit_test/temp.png')
 large = cv2.resize(image, (0, 0), fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
 rgb = cv2.pyrDown(large)
 small = cv2.cvtColor(rgb, cv2.COLOR_BGR2GRAY)
