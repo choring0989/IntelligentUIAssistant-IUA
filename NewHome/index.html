@@ -262,8 +262,8 @@
 				});
 			
 			$('#uploadClick').on('click', function() {
-				var rd = Math.floor(Math.random() * (120 - 1)) + 1;
-				storageRef.child('images/'+rd+filename).putString(base64data,'data_url').then(
+				var ts = new Date().getTime();
+				storageRef.child('images/'+ts).putString(base64data,'data_url').then(
 					function(snapshot) {
 						console.log('Uploaded a file!');
 						var alt = alert("업로드 완료!");
