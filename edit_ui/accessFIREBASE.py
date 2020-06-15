@@ -1,4 +1,3 @@
-from firebase import Firebase
 import firebase_admin
 from firebase_admin import storage
 from firebase_admin import credentials
@@ -15,5 +14,5 @@ source_blob_name = 'images/117뀨꺄.png'
 destination_file_name = 'edit_test/new.png'
 blob = storage.bucket(bucket_name).blob(source_blob_name)
 blob.download_to_filename(destination_file_name)
-print(blob.public_url) # prints https://storage.googleapis.com/my-app-name.appspot.com/a.jpg
+print(blob.public_url)
 
