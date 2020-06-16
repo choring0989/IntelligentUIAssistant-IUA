@@ -27,8 +27,13 @@ img_list = sorted(img_list, reverse=True)
 source_blob_name = 'images/'+img_list[0]
 destination_file_name = 'edit_test/'+img_list[0]
 print(source_blob_name)
-#유저가 가장 최근에 올린 파일 서버에 저장
+#유저가 가장 최근에 올린 파일을 서버에 저장
 blob = storage.bucket(bucket_name).blob(source_blob_name)
 blob.download_to_filename(destination_file_name)
 print(blob.public_url)
+
+#결과물 서버로 재전송
+upload_file_name = 'output/'+img_list[0]
+blob = storage.bucket(bucket_name).blob(upload_file_name)
+blob.upload_from_filename(destination_file_name)
 

@@ -119,7 +119,7 @@
 					<div class="tab-content" id="myTabContent">
 						<div class="tab-pane fade active show" id="auto" role="tabpanel" aria-labelledby="home-tab">
 							<div class="row made_life_text">
-								<div class="col-lg-6">
+								<div class="col-lg-5">
 									<div class="left_side_text">
 										<h3>We’ve made a life <br />that will change you</h3>
 										<h6>We are here to listen from you deliver exellence</h6>
@@ -136,9 +136,10 @@
 										<button id="result" class='main_btn' style="margin-top: 2px; border: hidden;">Download</button>
 									</div>
 								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/chart.jpg" alt="" id='iimage' style="max-height: 600px; max-width: 550px">
+								<div class="col-lg-7">
+									<div class="row">
+										<img class="col-lg-6" src="img/chart.jpg" alt="" id='iimage'>
+										<img class="col-lg-6" src="img/chart.jpg" alt="" id='output'>
 									</div>
 								</div>
 							</div>
@@ -166,32 +167,6 @@
 		</section>
 		
 		<script>
-			/*
-			$(function(){
-			
-				// First register any plugins
-				$.fn.filepond.registerPlugin(FilePondPluginImagePreview);
-
-				// Turn input element into a pond
-				$('.my-pond').filepond();
-
-				// Set allowMultiple property to true
-				$('.my-pond').filepond('allowMultiple', true);
-
-				// Listen for addfile event
-				$('.my-pond').on('FilePond:addfile', function(e) {
-					console.log('file added event', e);
-				});
-
-				// Manually add a file using the addfile method
-				$('.my-pond').first().filepond('addFile', 'index.html').then(function(file){
-					console.log('file added', file);
-				});
-
-			});
-			*/
-
-			//fb
 			var firebaseConfig = {
 				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
 				authDomain : "intelligentuiassistant-iua.firebaseapp.com",
@@ -260,19 +235,41 @@
 					// base64로 넘깁니다.
 					reader.readAsDataURL(file);
 				});
+
+				var download_url="";
 			
 			$('#uploadClick').on('click', function() {
 				var ts = new Date().getTime();
+				var newFilename = 'output/'+ts+'.'+filename.split('.')[1]
 				storageRef.child('images/'+ts+'.'+filename.split('.')[1]).putString(base64data,'data_url').then(
 					function(snapshot) {
 						console.log('Uploaded a file!');
 						var alt = alert("업로드 완료!");
-						document.getElementById('output').src = 'resources/img/train.PNG';
+						//document.getElementById('output').src = 'img/train.png';
+						storageRef.child(newFilename).getDownloadURL().then(function(url) {
+							// `url` is the download URL for 'images/stars.jpg'
+
+							// This can be downloaded directly:
+							var xhr = new XMLHttpRequest();
+							xhr.responseType = 'blob';
+							xhr.onload = function(event) {
+								var blob = xhr.response;
+							};
+							xhr.open('GET', url);
+							xhr.send();
+
+							// Or inserted into an <img> element:
+							var img = document.getElementById('output');
+							img.src = url;
+							download_url = url;
+							}).catch(function(error) {
+							// Handle any errors
+							});
 					});
 			});
 			
 			$('#result').on('click', function() {
-				location.href='https://firebasestorage.googleapis.com/v0/b/intelligentuiassistant-iua.appspot.com/o/output.zip?alt=media&token=c449112a-a9a0-449f-b0ac-06a6ec8db89f';
+				window.open(download_url);//결과가 단일 이미지일경우 바로 다운로드가 안 됩니다...나중에 결과 파일을 ZIP파일로 압축해서 서버에 올려야해요
 			});
 			
 			</script>
