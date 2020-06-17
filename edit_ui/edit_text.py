@@ -4,7 +4,7 @@ import numpy as np
 global clone, flag
 clone = None
 # 글자 설정
-magenta = (255, 0, 255)
+color = (255, 0, 255)
 text = 'Check text!'
 font = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
 fontScale = 1.5
@@ -19,7 +19,7 @@ def MouseLeftClick(event, x, y, flags, param):
         flag = True
         px = x
         py = y
-        cv2.putText(image, text, (x, y), font, fontScale, magenta, thickness)
+        cv2.putText(image, text, (x, y), font, fontScale, color, thickness)
         cv2.imshow("image", image)
         cv2.imwrite('edit_result/edit.png', image)
 
