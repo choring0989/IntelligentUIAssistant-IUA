@@ -236,34 +236,56 @@
 				});
 
 				var download_url="";
-			
-			$('#uploadClick').on('click', function() {
-				var ts = new Date().getTime();
-				var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
-				storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
-					function (snapshot) {
-						console.log('Uploaded a file!');
-						var alt = alert("업로드 완료!");
-						//document.getElementById('output').src = 'img/train.png';
-						storageRef.child(newFilename).getDownloadURL().then(function (url) {
-							// `url` is the download URL for 'images/stars.jpg'
 
-							// This can be downloaded directly:
-							var xhr = new XMLHttpRequest();
-							xhr.responseType = 'blob';
-							xhr.onload = function (event) {
-								var blob = xhr.response;
+				$('#uploadClick').on('click', function () {
+					var ts = new Date().getTime();
+					var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
+					storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
+						function (snapshot) {
+							console.log('Uploaded a file!');
+
+							var webSocket = new WebSocket("ws://localhost:9998");
+							// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
+							// 소켓 접속이 되면 호출되는 함수
+							webSocket.onopen = function (message) {
+								console.log("서버접속");
+								webSocket.send(ts + '.' + filename.split('.')[1]);
+								webSocket.close();
 							};
-							xhr.open('GET', url);
-							xhr.send();
+							// 소켓 접속이 끝나면 호출되는 함수
+							webSocket.onclose = function (message) {
+								console.log("연결해제");
+								//document.getElementById('output').src = 'img/train.png';
+								storageRef.child(newFilename).getDownloadURL().then(function (url) {
+									// `url` is the download URL for 'images/stars.jpg'
 
-							// Or inserted into an <img> element:
-							var img = document.getElementById('output');
-							img.src = url;
-							download_url = url;
+									// This can be downloaded directly:
+									var xhr = new XMLHttpRequest();
+									xhr.responseType = 'blob';
+									xhr.onload = function (event) {
+										var blob = xhr.response;
+									};
+									xhr.open('GET', url);
+									xhr.send();
+
+									// Or inserted into an <img> element:
+									var img = document.getElementById('output');
+									img.src = url;
+									download_url = url;
+								});
+
+								var alt = alert("업로드 완료!");
+							};
+							// 소켓 통신 중에 에러가 발생되면 호출되는 함수
+							webSocket.onerror = function (message) {
+								console.log("통신에러");
+							};
+							// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
+							webSocket.onmessage = function (message) {
+								console.log("서버가 말함");
+							};
 						});
-					});
-			});
+				});
 			
 			$('#result').on('click', function() {
 				window.open(download_url);//결과가 단일 이미지일경우 바로 다운로드가 안 됩니다...나중에 결과 파일을 ZIP파일로 압축해서 서버에 올려야해요
