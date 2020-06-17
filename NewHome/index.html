@@ -123,7 +123,8 @@
 									<div class="left_side_text">
 										<h3>We’ve made a life <br />that will change you</h3>
 										<h6>We are here to listen from you deliver exellence</h6>
-										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!</p>
+										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!<br>
+										(png, jpg 포맷만 지원합니다.)</p>
 
 										<div class="file_input">
 											<label>
@@ -180,7 +181,6 @@
 			// Initialize Firebase
 			firebase.initializeApp(firebaseConfig);
 			firebase.analytics();
-			console.log(firebase);
 
 			// Create a root reference
 			var storageRef = firebase.storage().ref();
@@ -194,7 +194,6 @@
 					reader.onload = function(e) {
 						// 변환이 끝나면 reader.result로 옵니다.
 						base64data = reader.result;
-						console.log(base64data);
 						document.getElementById('iimage').src = base64data;
 						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
 						var data = base64data.split(',')[1];
@@ -240,19 +239,19 @@
 			
 			$('#uploadClick').on('click', function() {
 				var ts = new Date().getTime();
-				var newFilename = 'output/'+ts+'.'+filename.split('.')[1]
-				storageRef.child('images/'+ts+'.'+filename.split('.')[1]).putString(base64data,'data_url').then(
-					function(snapshot) {
+				var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
+				storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
+					function (snapshot) {
 						console.log('Uploaded a file!');
 						var alt = alert("업로드 완료!");
 						//document.getElementById('output').src = 'img/train.png';
-						storageRef.child(newFilename).getDownloadURL().then(function(url) {
+						storageRef.child(newFilename).getDownloadURL().then(function (url) {
 							// `url` is the download URL for 'images/stars.jpg'
 
 							// This can be downloaded directly:
 							var xhr = new XMLHttpRequest();
 							xhr.responseType = 'blob';
-							xhr.onload = function(event) {
+							xhr.onload = function (event) {
 								var blob = xhr.response;
 							};
 							xhr.open('GET', url);
@@ -262,9 +261,7 @@
 							var img = document.getElementById('output');
 							img.src = url;
 							download_url = url;
-							}).catch(function(error) {
-							// Handle any errors
-							});
+						});
 					});
 			});
 			
