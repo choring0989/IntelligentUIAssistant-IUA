@@ -13,6 +13,7 @@ import random
 import itertools
 import colorsys
 
+import sys
 import numpy as np
 from skimage.measure import find_contours
 import matplotlib.pyplot as plt
@@ -163,7 +164,10 @@ def display_instances(image, boxes, masks, class_ids, class_names,
             p = Polygon(verts, facecolor="none", edgecolor=color)
             ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8))
+    plt.savefig('validate/validated.png', bbox_inches='tight')
+    plt.show()
     if auto_show:
+        plt.savefig('new.jpg', bbox_inches='tight')
         plt.show()
 
 

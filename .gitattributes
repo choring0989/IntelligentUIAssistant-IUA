@@ -1,0 +1,6 @@
+separate_ui/model/mask_rcnn_ui_0007.h5 filter=lfs diff=lfs merge=lfs -text
+separate_ui/model/mask_rcnn_ui_0007.h5 filter=lfs diff=lfs merge=lfs -text
+separate_ui/model/mask_rcnn_ui_0007.h5 filter=lfs diff=lfs merge=lfs -text
+mask_rcnn_ui_0007.h5 filter=lfs diff=lfs merge=lfs -text
+C:/Users/이슬이/Documents/GitHub/IntelligentUIAssistant-IUA/separate_ui/model/mask_rcnn_ui_0007.h5 filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text

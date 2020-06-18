@@ -8,7 +8,7 @@ import json
 import pandas as pd
 
 LOGS_FOLDER = "model"
-TRAINED_MASKRCNN_WEIGHTS = "model/mask_rcnn_ui_0010(2).h5"
+TRAINED_MASKRCNN_WEIGHTS = "model/mask_rcnn_ui_0009.h5"
 CLASSES = ['UI']
 IMG_DIR = "input"##사진 넣는 곳.
 RES_DIR = "output"##결과물 넣는 곳.
@@ -71,14 +71,15 @@ def display_instances(image, boxes, masks, ids, names, scores):
         trim_img=image_trim(origin,x1,y1,x2,y2)
         cnt+=1
         cv2.imwrite(RES_DIR+"/ui"+str(cnt)+"_"+user_image,trim_img)
-        #label = names[ids[i]]
-        #color = class_dict[label]
-        #score = scores[i] if scores is not None else None
-        #caption = '{}{:.2f}'.format(label, score) if score else label
-        #mask = masks[:, :, i]
-        #image = apply_mask(image, mask, color)
-        #image =cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
-        #image = cv2.putText(image, caption, (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.5, color, 2)
+
+        label = names[ids[i]]
+        color = class_dict[label]
+        score = scores[i] if scores is not None else None
+        caption = '{}{:.2f}'.format(label, score) if score else label
+        mask = masks[:, :, i]
+        image = apply_mask(image, mask, color)
+        image = cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
+        image = cv2.putText(image, caption, (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.5, color, 2)
 
     return image, n_instances
 
