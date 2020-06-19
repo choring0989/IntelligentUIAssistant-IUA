@@ -17,17 +17,20 @@ async def accept(websocket, path):
         print("model:" + model_name)
 
         source_blob_name = 'images/' + img_name
-        destination_file_name = 'edit_test/' + img_name
+        destination_file_name = 'input/' + img_name
         print(source_blob_name)
         # 유저가 가장 최근에 올린 파일을 서버에 저장
         blob = storage.bucket(bucket_name).blob(source_blob_name)
         blob.download_to_filename(destination_file_name)
         print(blob.public_url)
 
+        import seperate_ui
+        seperate_ui.main("model/"+model_name, img_name)
+
         # 결과물 서버로 재전송
         upload_file_name = 'output/' + img_name
         blob = storage.bucket(bucket_name).blob(upload_file_name)
-        blob.upload_from_filename(destination_file_name)
+        blob.upload_from_filename('output/' + img_name)
 
         # 클라이언트에 처리 완료 알림
         await websocket.send("success");

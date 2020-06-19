@@ -20,10 +20,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c0d054-233f-4488-ab70-c080dab44a96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/edit_ui.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accessFIREBASE.py" beforeDir="false" afterPath="$PROJECT_DIR$/accessFIREBASE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit_result/edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/edit_result/edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit_test/05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit_test/edit_ui2.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/edit_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/edit_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/separate_ui.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/Untitled0.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/train/via_region_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/val/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/val/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/val/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/dataset/val/via_region_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/input/64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/model/events.out.tfevents.1592403063.32a80cf33fde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/model/mask_rcnn_ui_0005.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/model/mask_rcnn_ui_0007.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/model/mask_rcnn_ui_0009.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/parallel_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/visualize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/seperate_ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/validation.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,9 +175,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="seperate_ui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="edit_ui" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/seperate_ui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.accessFIREBASE" />
+        <item itemvalue="Python.seperate_ui" />
       </list>
     </recent_temporary>
   </component>
@@ -140,22 +241,22 @@
       <screen x="0" y="0" width="1451" height="777" />
     </state>
     <state x="506" y="144" key="FileChooserDialogImpl/0.0.1451.777@0.0.1451.777" timestamp="1592471253479" />
-    <state width="1430" height="143" key="GridCell.Tab.0.bottom" timestamp="1592563354782">
+    <state width="1430" height="143" key="GridCell.Tab.0.bottom" timestamp="1592569395520">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.bottom/0.0.1451.777@0.0.1451.777" timestamp="1592563354782" />
-    <state width="1430" height="143" key="GridCell.Tab.0.center" timestamp="1592563354781">
+    <state width="1430" height="143" key="GridCell.Tab.0.bottom/0.0.1451.777@0.0.1451.777" timestamp="1592569395520" />
+    <state width="1430" height="143" key="GridCell.Tab.0.center" timestamp="1592569395520">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.center/0.0.1451.777@0.0.1451.777" timestamp="1592563354781" />
-    <state width="1430" height="143" key="GridCell.Tab.0.left" timestamp="1592563354780">
+    <state width="1430" height="143" key="GridCell.Tab.0.center/0.0.1451.777@0.0.1451.777" timestamp="1592569395520" />
+    <state width="1430" height="143" key="GridCell.Tab.0.left" timestamp="1592569395520">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.left/0.0.1451.777@0.0.1451.777" timestamp="1592563354780" />
-    <state width="1430" height="143" key="GridCell.Tab.0.right" timestamp="1592563354781">
+    <state width="1430" height="143" key="GridCell.Tab.0.left/0.0.1451.777@0.0.1451.777" timestamp="1592569395520" />
+    <state width="1430" height="143" key="GridCell.Tab.0.right" timestamp="1592569395520">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.right/0.0.1451.777@0.0.1451.777" timestamp="1592563354781" />
+    <state width="1430" height="143" key="GridCell.Tab.0.right/0.0.1451.777@0.0.1451.777" timestamp="1592569395520" />
     <state width="1430" height="242" key="GridCell.Tab.1.bottom" timestamp="1592061316209">
       <screen x="0" y="0" width="1451" height="777" />
     </state>

@@ -26,7 +26,7 @@ def MouseLeftClick(event, x, y, flags, param):
     # 수정하고 싶은 이미지 경로
 
 
-image = cv2.imread('edit_test/temp.png')
+image = cv2.imread('edit_test/05.png')
 large = cv2.resize(image, (0, 0), fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
 rgb = cv2.pyrDown(large)
 small = cv2.cvtColor(rgb, cv2.COLOR_BGR2GRAY)
@@ -36,7 +36,7 @@ _, bw = cv2.threshold(grad, 0.0, 255.0, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (9, 1))
 connected = cv2.morphologyEx(bw, cv2.MORPH_CLOSE, kernel)
 # using RETR_EXTERNAL instead of RETR_CCOMP
-_, contours, hierarchy = cv2.findContours(connected.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+contours, hierarchy = cv2.findContours(connected.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 mask = np.zeros(bw.shape, dtype=np.uint8)
 
 for idx in range(len(contours)):
@@ -56,17 +56,17 @@ for idx in range(len(contours)):
 # 문자 위치 선택 여부
 flag = False
 cv2.namedWindow("image")
-#cv2.setMouseCallback("image", MouseLeftClick)
-cv2.imwrite('edit_result/edit.png', image)
+# cv2.setMouseCallback("image", MouseLeftClick)
+cv2.imwrite('edit_result/edit.png', rgb)
 
 clone = rgb.copy()
 
-while True:
-    cv2.imshow("image", rgb)
-    key = cv2.waitKey(0)
+#while True:
+#    cv2.imshow("image", rgb)
+#    key = cv2.waitKey(0)
 
-    if key == ord('q'):  # 프로그램 종료
-        break
+#    if key == ord('q'):  # 프로그램 종료
+#        break
 
 # 모든 window를 종료합니다.
 cv2.destroyAllWindows()
