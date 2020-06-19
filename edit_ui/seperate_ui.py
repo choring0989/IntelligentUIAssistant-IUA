@@ -69,7 +69,7 @@ def display_instances(image, boxes, masks, ids, names, scores):
         y1, x1, y2, x2 = boxes[i]
         trim_img = image_trim(origin, x1, y1, x2, y2)
         cnt += 1
-        cv2.imwrite(RES_DIR + "/ui" + str(cnt) + "_" + user_image, trim_img)
+        cv2.imwrite(RES_DIR + "/" + user_image.split(".")[0] + "/ui" + str(cnt) + "_" + user_image, trim_img)
 
         label = names[ids[i]]
         color = class_dict[label]

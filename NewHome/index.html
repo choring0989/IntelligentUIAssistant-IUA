@@ -246,6 +246,7 @@
 				var download_url="";
 
 				$('#uploadClick').on('click', function () {
+					var img = document.getElementById('output');
 					var ts = new Date().getTime();
 					var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
 					var model = document.getElementById("model")
@@ -255,6 +256,7 @@
 					storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
 						function (snapshot) {
 							var webSocket = new WebSocket("ws://localhost:9998");
+							img.src = "img/loading.gif"
 							// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
 							// 소켓 접속이 되면 호출되는 함수
 							webSocket.onopen = function (message) {
@@ -279,17 +281,20 @@
 										xhr.send();
 
 										// Or inserted into an <img> element:
-										var img = document.getElementById('output');
 										img.src = url;
-										download_url = url;
 										var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
+									});
+									storageRef.child('zip/' + ts + '.zip').getDownloadURL().then(function (url) {
+										download_url = url;
 									});
 								}
 								else if(errorBit === 1){
 									var alt = alert("현재 서버가 동작하지 않습니다.");
+									img.src = "img/chart_.png"
 								}
 								else if(errorBit === 2){
 									var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
+									img.src = "img/chart_.png"
 								}
 							};
 							// 소켓 통신 중에 에러가 발생되면 호출되는 함수
