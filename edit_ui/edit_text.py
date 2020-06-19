@@ -56,7 +56,8 @@ for idx in range(len(contours)):
 # 문자 위치 선택 여부
 flag = False
 cv2.namedWindow("image")
-cv2.setMouseCallback("image", MouseLeftClick)
+#cv2.setMouseCallback("image", MouseLeftClick)
+cv2.imwrite('edit_result/edit.png', image)
 
 clone = rgb.copy()
 

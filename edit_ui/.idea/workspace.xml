@@ -20,22 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c0d054-233f-4488-ab70-c080dab44a96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../separate_ui/.idea/separate_ui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewHome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../NewHome/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/mrcnn/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/mrcnn/visualize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/result64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui10_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui10_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui11_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui11_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui1_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui1_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui2_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui2_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui3_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui3_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui4_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui4_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui5_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui5_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui6_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui6_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui7_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui7_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui8_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui8_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/output/ui9_64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/output/ui9_64.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../separate_ui/seperate_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/seperate_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessFIREBASE.py" beforeDir="false" afterPath="$PROJECT_DIR$/accessFIREBASE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/edit_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../separate_ui/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../separate_ui/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,22 +140,22 @@
       <screen x="0" y="0" width="1451" height="777" />
     </state>
     <state x="506" y="144" key="FileChooserDialogImpl/0.0.1451.777@0.0.1451.777" timestamp="1592471253479" />
-    <state width="1430" height="143" key="GridCell.Tab.0.bottom" timestamp="1592413424154">
+    <state width="1430" height="143" key="GridCell.Tab.0.bottom" timestamp="1592563354782">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.bottom/0.0.1451.777@0.0.1451.777" timestamp="1592413424154" />
-    <state width="1430" height="143" key="GridCell.Tab.0.center" timestamp="1592413424154">
+    <state width="1430" height="143" key="GridCell.Tab.0.bottom/0.0.1451.777@0.0.1451.777" timestamp="1592563354782" />
+    <state width="1430" height="143" key="GridCell.Tab.0.center" timestamp="1592563354781">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.center/0.0.1451.777@0.0.1451.777" timestamp="1592413424154" />
-    <state width="1430" height="143" key="GridCell.Tab.0.left" timestamp="1592413424154">
+    <state width="1430" height="143" key="GridCell.Tab.0.center/0.0.1451.777@0.0.1451.777" timestamp="1592563354781" />
+    <state width="1430" height="143" key="GridCell.Tab.0.left" timestamp="1592563354780">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.left/0.0.1451.777@0.0.1451.777" timestamp="1592413424154" />
-    <state width="1430" height="143" key="GridCell.Tab.0.right" timestamp="1592413424154">
+    <state width="1430" height="143" key="GridCell.Tab.0.left/0.0.1451.777@0.0.1451.777" timestamp="1592563354780" />
+    <state width="1430" height="143" key="GridCell.Tab.0.right" timestamp="1592563354781">
       <screen x="0" y="0" width="1451" height="777" />
     </state>
-    <state width="1430" height="143" key="GridCell.Tab.0.right/0.0.1451.777@0.0.1451.777" timestamp="1592413424154" />
+    <state width="1430" height="143" key="GridCell.Tab.0.right/0.0.1451.777@0.0.1451.777" timestamp="1592563354781" />
     <state width="1430" height="242" key="GridCell.Tab.1.bottom" timestamp="1592061316209">
       <screen x="0" y="0" width="1451" height="777" />
     </state>

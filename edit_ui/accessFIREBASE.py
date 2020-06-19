@@ -9,8 +9,12 @@ import websockets
 async def accept(websocket, path):
     while True:
         # 클라이언트로부터 메시지를 대기한다.
-        img_name = await websocket.recv()
-        print("receive:" + img_name)
+        client_bla = await websocket.recv()
+
+        img_name = client_bla.split("&")[0]
+        model_name = client_bla.split("&")[1]
+        print("img:" + img_name)
+        print("model:" + model_name)
 
         source_blob_name = 'images/' + img_name
         destination_file_name = 'edit_test/' + img_name
@@ -24,6 +28,9 @@ async def accept(websocket, path):
         upload_file_name = 'output/' + img_name
         blob = storage.bucket(bucket_name).blob(upload_file_name)
         blob.upload_from_filename(destination_file_name)
+
+        # 클라이언트에 처리 완료 알림
+        await websocket.send("success");
 
 # 파이어베이스 인증
 cred = credentials.Certificate(
