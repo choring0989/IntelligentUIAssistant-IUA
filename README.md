@@ -8,3 +8,4 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * firebase_admin 4.3.0<br>
 > * Python google.cloud<br>
 > * Python websockets<br>
+> * Python zipfile37<br>
