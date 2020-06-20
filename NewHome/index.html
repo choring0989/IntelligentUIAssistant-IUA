@@ -98,21 +98,25 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Made Life Area =================-->
-        <section class="made_life_area p_120">
-        	<div class="container">
-        		<div class="made_life_inner">
+		<section class="made_life_area p_120">
+			<div class="container">
+				<div class="made_life_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
-						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#auto" role="tab" aria-controls="home" aria-selected="true">Automatic separation</a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#auto" role="tab"
+								aria-controls="home" aria-selected="true">Automatic separation</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#dtext" role="tab" aria-controls="profile" aria-selected="false">Deleting text</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#dtext" role="tab"
+								aria-controls="profile" aria-selected="false">Deleting text</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#" role="tab" aria-controls="contact" aria-selected="false">coming soon</a>
+							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#" role="tab" aria-controls="contact"
+								aria-selected="false">coming soon</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#" role="tab" aria-controls="edge" aria-selected="false">coming soon</a>
+							<a class="nav-link" id="edge-tab" data-toggle="tab" href="#" role="tab" aria-controls="edge"
+								aria-selected="false">coming soon</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -126,12 +130,14 @@
 											분리 모델을 선택하고 "File Upload" 버튼을 눌러주세요.<br>
 											결과 파일은 "Download Result" 버튼을 누르면 zip 파일로 다운 가능합니다.<br>
 											(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
-
+		
 										<div class="file_input">
-											<input type="text" readonly="readonly" title="File Route" id="file_route" value="&nbsp; &nbsp;File route">
+											<input type="text" readonly="readonly" title="File Route" id="file_route"
+												value="&nbsp; &nbsp;File route">
 											<label>
 												Select File
-												<input type="file" id="fileupload" onchange="javascript:document.getElementById('file_route').value=this.value">
+												<input type="file" id="fileupload"
+													onchange="javascript:document.getElementById('file_route').value=this.value">
 											</label>
 										</div>
 										<div class="file_input">
@@ -141,10 +147,13 @@
 												<option value='mask_rcnn_ui_0007.h5'>Orange Pink</option>
 												<option value='mask_rcnn_ui_0009.h5'>Salmon pink</option>
 											</select>
-											<button id="uploadClick" class='main_btn' style="margin-top: 2px; border: hidden;">File Upload</button>
+											<button id="uploadClick" class='main_btn'
+												style="margin-top: 2px; border: hidden;">File
+												Upload</button>
 										</div>
-											<button id="result" class='main_btn' style="margin-top: 12px; border: hidden;">Download Result</button>
-										</div>
+										<button id="result" class='main_btn' style="margin-top: 12px; border: hidden;">Download
+											Result</button>
+									</div>
 								</div>
 								<div class="col-lg-7">
 									<div class="row">
@@ -156,24 +165,45 @@
 						</div>
 						<div class="tab-pane fade" id="dtext" role="tabpanel" aria-labelledby="profile-tab">
 							<div class="row made_life_text">
-								<div class="col-lg-6">
+								<div class="col-lg-5">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<h3 style="margin-bottom: 16px;">Deleting text<br>inside UI component</h3>
+										<h6>Automatic Deleting text of UI component is performed using machine learning.</h6>
+										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 내부의 글자를 지워보세요!<br>
+											결과 파일은 "Download Result" 버튼을 누르면 이미지 파일로 다운 가능합니다.<br>
+											(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
+		
+										<div class="file_input">
+											<input type="text" readonly="readonly" title="File Route_text" id="file_route_text"
+												value="&nbsp; &nbsp;File route">
+											<label>
+												Select File
+												<input type="file" id="fileupload_text"
+													onchange="javascript:document.getElementById('file_route_text').value=this.value">
+											</label>
+										</div>
+										<div class="row">
+											<div class="file_input" style="margin-left: 15px;">
+												<button id="uploadClick_text" class='main_btn'
+													style="margin-top: 2px; border: hidden;">File
+													Upload</button>
+												<button id="result_text" class='main_btn'
+													style="margin-top: 12px; border: hidden;">Download
+													Result</button>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="col-lg-6">
-									<div class="chart_img">
-										<img class="img-fluid" src="img/chart.jpg" alt="">
+								<div class="col-lg-7">
+									<div class="row">
+										<img class="col-lg-6" src="img/chart.png" alt="" id='iimage_text'>
+										<img class="col-lg-6" src="img/chart_.png" alt="" id='output_text'>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-        		</div>
-        	</div>
+				</div>
 		</section>
 		
 		<script>
@@ -244,6 +274,9 @@
 					reader.readAsDataURL(file);
 				});
 
+
+				// UI 분리하기
+
 				var download_url="";
 
 				$('#uploadClick').on('click', function () {
@@ -262,7 +295,8 @@
 							// 소켓 접속이 되면 호출되는 함수
 							webSocket.onopen = function (message) {
 								console.log("서버접속");
-								webSocket.send(ts + '.' + filename.split('.')[1] + "&" + model.options[model.selectedIndex].value);
+								webSocket.send("SP&"+ ts + '.' + filename.split('.')[1] + "&" + model.options[model.selectedIndex].value);
+								//SP -> separation
 							};
 							// 소켓 접속이 끝나면 호출되는 함수
 							webSocket.onclose = function (message) {
@@ -319,7 +353,131 @@
 				});
 			
 			$('#result').on('click', function() {
-				window.open(download_url);//결과가 단일 이미지일경우 바로 다운로드가 안 됩니다...나중에 결과 파일을 ZIP파일로 압축해서 서버에 올려야해요
+				window.open(download_url);
+			});
+
+
+			// 텍스트 도려내기
+
+			$('#fileupload_text').on('propertychange change',
+				function() {
+					var file = $("#fileupload_text")[0].files[0];
+					filename = file.name;
+					var reader = new FileReader();
+					reader.onload = function(e) {
+						// 변환이 끝나면 reader.result로 옵니다.
+						base64data = reader.result;
+						document.getElementById('iimage_text').src = base64data;
+						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
+						var data = base64data.split(',')[1];
+						var sendsize = 1024;
+						var filelength = data.length;
+						var pos = 0;
+						var upload = function() {
+							$.ajax({
+								type : 'POST',
+								dataType : 'json',
+								data : {
+									filename : filename,
+									filelength : filelength,
+									filepos : pos,
+									data : data.substring(pos,pos+sendsize)
+								},
+								url : './upload',
+								success : function(data) {
+									console.log("성공")
+									// 전체가 전송될 때까지
+									if (pos < filelength) {
+										// 재귀
+										setTimeout(upload,1);
+									}
+									pos = pos + sendsize;
+									if (pos > filelength) {
+										pos = filelength;}
+									$('#progress').text(pos+ ' / '+ filelength);
+								},
+								error : function(jqXHR,textStatus,errorThrown) {
+								},
+								complete : function(jqXHR,textStatus) {
+								}
+							});
+						};
+						setTimeout(upload, 1);
+					}
+					// base64로 넘깁니다.
+					reader.readAsDataURL(file);
+				});
+
+			var download_url_text="";
+
+			$('#uploadClick_text').on('click', function () {
+					var img = document.getElementById('output_text');
+					var ts = new Date().getTime();
+					var newFilename = 'output_text/' + ts + '.' + filename.split('.')[1]
+					var model = "none"
+					var errorBit = 0
+					
+					storageRef.child('images_text/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
+						function (snapshot) {
+							var webSocket = new WebSocket("ws://localhost:9998");
+							img.src = "img/loading.gif"
+							// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
+							// 소켓 접속이 되면 호출되는 함수
+							webSocket.onopen = function (message) {
+								console.log("서버접속");
+								webSocket.send("TD&"+ ts + '.' + filename.split('.')[1] + "&" + model);
+								//TD -> text delete
+							};
+							// 소켓 접속이 끝나면 호출되는 함수
+							webSocket.onclose = function (message) {
+								if(errorBit === 0){
+									console.log("연결해제");
+									storageRef.child(newFilename).getDownloadURL().then(function (url) {
+										var xhr = new XMLHttpRequest();
+										xhr.responseType = 'blob';
+										xhr.onload = function (event) {
+											var blob = xhr.response;
+										};
+										xhr.open('GET', url);
+										xhr.send();
+
+										// Or inserted into an <img> element:
+										img.src = url;
+										download_url_text = url;
+										var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
+									});
+								}
+								else if(errorBit === 1){
+									var alt = alert("현재 서버가 동작하지 않습니다.");
+									img.src = "img/chart_.png"
+								}
+								else if(errorBit === 2){
+									var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
+									img.src = "img/chart_.png"
+								}
+							};
+							// 소켓 통신 중에 에러가 발생되면 호출되는 함수
+							webSocket.onerror = function (message) {
+								console.log("통신에러");
+								errorBit = 1;
+							};
+							// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
+							webSocket.onmessage = function (message) {
+								if (message.data == "success"){
+									webSocket.close();
+									console.log("연결닫음");
+								}
+								else{
+									webSocket.close();
+									console.log("프로세싱에러");
+									errorBit = 2;
+								}
+							};
+						});
+				});
+			
+			$('#result_text').on('click', function() {
+				window.open(download_url_text);
 			});
 			
 			</script>
