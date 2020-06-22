@@ -41,9 +41,10 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
  <img src="./image/img11.PNG" width="420" height="300">
  
  2. Install tensorflow-gpu = 1.15.0 and keras=2.2.5.
- '''
- ㄴㅇㄹ
- '''
+ > pip install tensorflow-gpu==1.15.0
+ > pip install keras==2.2.5
+ 
+ 3. 
   
 - Validate Model
 
