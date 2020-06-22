@@ -26,6 +26,7 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * imgaug<br>
 > * IPython[all]<br>
 ## UI Component Separation
+The UI components of the image entered by the user are automatically separated using the learned model.
 ### UI Detection<br>
 
 ## Deleteing Text Inside UI Component
