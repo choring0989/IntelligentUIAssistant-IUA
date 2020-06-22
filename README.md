@@ -92,7 +92,21 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 
 ### Tesseract-ORC
 Tesseract is an open source OCR engine.[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)<br>
+We used 'Tesseract at UB Mannheim' for the Windows version of Tesseract.
 
+1. Install the installer for your computer operating system.[Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)
+
+2. Check the desired language in the 'Additional language data (download)' and proceed with the download.
+
+3. Install pytesseract
+>  pip install pytesseract<br>
+
+4. Edit pytesseract.py
+> tesseract_cmd = 'tesseract'<br>
+
+Edit it to the actual tesseract path you set up earlier.
+ 
+5. Import phytesserct and use it.
 
 ### Example Code - Find text area
 ~~~
