@@ -40,8 +40,7 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
  
    <img src="./image/img11.PNG" width="420" height="300" align="center">
  
- 2. Download mask_rcnn_coco.h5 file.
-     - [Link](https://github.com/matterport/Mask_RCNN/releases)
+ 2. Download mask_rcnn_coco.h5 file.[Link](https://github.com/matterport/Mask_RCNN/releases)
  
  3. Install tensorflow-gpu = 1.15.0 and keras=2.2.5.
    > pip install tensorflow-gpu==1.15.0<br>
