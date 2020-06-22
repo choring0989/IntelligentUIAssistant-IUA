@@ -24,5 +24,9 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * h5py<br>
 > * imgaug<br>
 > * IPython[all]<br>
-## Detection of UI
+## Separating UI
+### UI Detection<br>
+
+## Editing UI
+### Tesseract-ORC
 
