@@ -82,7 +82,7 @@ def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
 ~~~
 > TRAINED_MASKRCNN_WEIGHTS_: Take over the trained model you want to use.<br>
 > user_image_: Take over the image name that you want to separate UI.<br>
-- Set parameters and run seperate_ui.py
+Set parameters and run seperate_ui.py
 
 ### Execution Screen
 
@@ -101,7 +101,29 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 
 ### Tesseract-ORC
 
-### Example Code
+### Example Code - Find text area
+~~~
+origin = cv2.imread(PATH_IMAGE)
+origin = cv2.resize(origin, None, fx=2.5, fy=2.5)
+
+image = cv2.cvtColor(origin, cv2.COLOR_BGR2GRAY)
+_, image = cv2.threshold(image, 100, 255, cv2.THRESH_BINARY)
+
+d = pytesseract.image_to_data(image, output_type=Output.DICT)
+
+n_boxes = len(d['text'])
+for i in range(n_boxes):
+    if int(d['conf'][i]) > 60:
+        (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
+        image = cv2.rectangle(origin, (x , y ), (x + w , y + h ), (255,0,0), 2)
+
+cv2.imshow('img', origin)
+cv2.waitKey(0)
+~~~
+> PATH_IMAGE: Image path to find text area.<br>
+Set parameters and run then you can see the text area.
+    
+    
 ### Execution Screen
 
 1. If you enter ui component, you can see that the letters disappeared from  after loading.<br>
