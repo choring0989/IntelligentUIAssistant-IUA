@@ -36,7 +36,7 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 
 1. Upload the image you want to separate the UI components. And choose one of the pre-learned models.
 
-<img src="./image/img2.png" width="400" height="200" align="center"><img src="./image/img3.png" width="400" height="200" align="center">
+<img src="./image/img2.png" width="420" height="200" ><img src="./image/img3.png" width="420" height="200">
 
 2. The detection result can be checked after loading time. 
 
