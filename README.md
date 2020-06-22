@@ -69,19 +69,10 @@ def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
     print("model name(seperate_ui): ", TRAINED_MASKRCNN_WEIGHTS)
     print("image name(seperate_ui)", user_image)
 
-    for filename in os.listdir(IMG_DIR):
-        if (filename == user_image):
-            # print(filename)
-            test_image = cv2.imread(os.path.join(IMG_DIR, filename))
-            results = model.detect([test_image], verbose=0)
-            r = results[0]
-            result, number_of_instances = display_instances(
-                test_image, r['rois'], r['masks'], r['class_ids'], class_names, r['scores']
-            )
-            cv2.imwrite(RES_DIR + "/" + filename, result)
 ~~~
 > TRAINED_MASKRCNN_WEIGHTS_: Take over the trained model you want to use.<br>
 > user_image_: Take over the image name that you want to separate UI.<br>
+
 Set parameters and run seperate_ui.py
 
 ### Execution Screen
@@ -121,6 +112,7 @@ cv2.imshow('img', origin)
 cv2.waitKey(0)
 ~~~
 > PATH_IMAGE: Image path to find text area.<br>
+
 Set parameters and run then you can see the text area.
     
     
