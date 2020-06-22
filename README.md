@@ -47,5 +47,5 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 
 If you enter ui component, you can see that the letters disappeared from  after loading.<br>
 
-<img src="./image/img7.png" width="300" height="190"><img src="./image/img8.png" width="300" height="190"><img src="./image/img9.png" width="300" height="190">
+<img src="./image/img7.png" width="300" height="150"><img src="./image/img8.png" width="300" height="150"><img src="./image/img9.png" width="300" height="150">
 
