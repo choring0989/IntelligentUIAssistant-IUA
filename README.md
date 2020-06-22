@@ -43,7 +43,6 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 <img src="./image/img4.png" width="300" height="150"><img src="./image/img5.png" width="300" height="150"><img src="./image/img6.png" width="300" height="150">
 
 3. Press the download button to receive the results in the zip file format.
-<br>
 ## Deleteing Text Inside UI Component
 
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
@@ -57,4 +56,3 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 <img src="./image/img7.png" width="300" height="150"><img src="./image/img8.png" width="300" height="150"><img src="./image/img9.png" width="300" height="150">
 
 2. Press the download button to receive the results in the zip file format.
-
