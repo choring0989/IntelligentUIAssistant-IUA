@@ -33,7 +33,14 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 #### Mask R-CNN
 This project utilized the code here. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
 
-1. 
+- Train Model
+  1. Prepare the custom dataset.
+  - After labeling each image, save it to a dataset file.(train/val)
+  
+  2.
+  
+- Validate Model
+
 ### Example Code
 ### Execution Screen
 
