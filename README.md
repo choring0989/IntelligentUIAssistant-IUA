@@ -1,5 +1,6 @@
 # IntelligentUIAssistant-IUA
 IUA is a web application that mainly performs the task of separating the UI of graphic components.<br>
+
 ![main_screen](./image/img1.png)
 ### The server environment for execution is:<br>
 > * Python 3.6<br>
@@ -34,10 +35,14 @@ To detect UI, we used mask r-cnn among object detection models.<br>
 ### Execution Screen
 
 ## Deleteing Text Inside UI Component
+
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
+
 ### Tesseract-ORC
 ### Example Code
 ### Execution Screen
+
 If you enter ui component, you can see that the letters disappeared from  after loading.<br>
+
 <img src="./image/img7.png" width="300" height="190"><img src="./image/img8.png" width="300" height="190"><img src="./image/img9.png" width="300" height="190">
 
