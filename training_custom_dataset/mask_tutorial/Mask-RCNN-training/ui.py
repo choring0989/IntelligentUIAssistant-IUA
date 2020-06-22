@@ -7,24 +7,6 @@ Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
 
 ------------------------------------------------------------
-
-Usage: import the module (see Jupyter notebooks for examples), or run from
-       the command line as such:
-
-    # Train a new model starting from pre-trained COCO weights
-    python3 bottle.py train --dataset=/home/datascience/Workspace/maskRcnn/Mask_RCNN-master/samples/bottle/dataset --weights=coco
-
-    # Resume training a model that you had trained earlier
-    python3 bottle.py train --dataset=/path/to/bottle/dataset --weights=last
-
-    # Train a new model starting from ImageNet weights
-    python3 bottle.py train --dataset=/path/to/bottle/dataset --weights=imagenet
-
-    # Apply color splash to an image
-    python3 bottle.py splash --weights=/path/to/weights/file.h5 --image=<URL or path to file>
-
-    # Apply color splash to video using the last weights you trained
-    python3 bottle.py splash --weights=last --video=<URL or path to file>
 """
 
 import os
@@ -69,7 +51,7 @@ class CustomConfig(Config):
     IMAGES_PER_GPU = 2
 
     # Number of classes (including background)
-    NUM_CLASSES = 1 + 1  # Background + toy
+    NUM_CLASSES = 1 + 1  # Background + UI
 
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
