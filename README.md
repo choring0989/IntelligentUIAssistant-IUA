@@ -31,6 +31,7 @@ The UI components of the image entered by the user are automatically separated u
 ### UI Detection<br>
 To detect UI, we used Mask R-CNN among object detection models.<br>
 #### Mask R-CNN
+This project utilized the mask-rcnnn implementation code. The original code is here. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
 ### Example Code
 ### Execution Screen
 
@@ -40,7 +41,7 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 
 2. The detection result can be checked after loading time. 
 
-<img src="./image/img4.png" width="300" height="150"><img src="./image/img5.png" width="300" height="150"><img src="./image/img6.png" width="300" height="150">
+<img src="./image/img4.png" width="290" height="150"><img src="./image/img5.png" width="290" height="150"><img src="./image/img6.png" width="290" height="150">
 
 3. Press the download button to receive the results in the zip file format.
 ## Deleteing Text Inside UI Component
