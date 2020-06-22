@@ -80,8 +80,8 @@ def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
             )
             cv2.imwrite(RES_DIR + "/" + filename, result)
 ~~~
-> TRAINED_MASKRCNN_WEIGHTS_: Take over the trained model you want to use.
-> user_image_: Take over the image name that you want to separate UI.
+> TRAINED_MASKRCNN_WEIGHTS_: Take over the trained model you want to use.<br>
+> user_image_: Take over the image name that you want to separate UI.<br>
 - Set parameters and run seperate_ui.py
 
 ### Execution Screen
@@ -100,6 +100,7 @@ def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
 
 ### Tesseract-ORC
+
 ### Example Code
 ### Execution Screen
 
