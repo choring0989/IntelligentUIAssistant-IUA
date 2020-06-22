@@ -31,7 +31,9 @@ The UI components of the image entered by the user are automatically separated u
 ### UI Detection<br>
 To detect UI, we used Mask R-CNN among object detection models.<br>
 #### Mask R-CNN
-This project utilized the mask-rcnnn implementation code. The original code is here. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
+This project utilized the code here. [Mask-RCNN](https://github.com/matterport/Mask_RCNN)
+
+1. 
 ### Example Code
 ### Execution Screen
 
