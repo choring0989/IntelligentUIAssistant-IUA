@@ -1,6 +1,6 @@
 # IntelligentUIAssistant-IUA
 IUA is a web application that mainly performs the task of separating the UI of graphic components.<br>
-![main_screen](./image/screenshot1.png)
+![main_screen](./image/sreenshot1.png)
 <br><br>
 ## The server environment for execution is:<br>
 > * Python 3.6<br>
