@@ -38,5 +38,5 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 ### Tesseract-ORC
 ## Example Code
 ## Execution Screen
-![dUI1](./image/img7.png){: width="30%" height="100%"}![dUI2](./image/img8.png)![dUI3](./image/img9.png)
+![dUI1](./image/img7.png){: width="200" height="300"}![dUI2](./image/img8.png)![dUI3](./image/img9.png)
 
