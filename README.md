@@ -34,7 +34,7 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 ### Example Code
 ### Execution Screen
 
-<img src="./image/img2.png" width="500" height="200"><img src="./image/img3.png" width="500" height="200">
+<img src="./image/img2.png" width="400" height="200"><img src="./image/img3.png" width="400" height="200">
 
 
 ## Deleteing Text Inside UI Component
