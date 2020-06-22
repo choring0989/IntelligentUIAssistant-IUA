@@ -54,7 +54,7 @@ Visualize the detection result. We chose the three most accurate models.
 
 <img src="./image/img12.PNG" width="420" height="300" align="center">
 
-### Example Code - se
+### Example Code - /edit_ui/seperate_ui.py
 ~~~
 def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
     global colors, class_dict
