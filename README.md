@@ -38,11 +38,12 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
  - After labeling each image, save it to a dataset file.(train/val)
  - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
  
- <img src="./image/img10.PNG" width="420" height="200" ><img src="./image/img11.PNG" width="420" height="200">
+ <img src="./image/img11.PNG" width="420" height="300">
  
- 
-  
- 2.
+ 2. Install tensorflow-gpu = 1.15.0 and keras=2.2.5.
+ '''
+ ㄴㅇㄹ
+ '''
   
 - Validate Model
 
