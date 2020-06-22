@@ -52,9 +52,13 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
 - Validate Model-validation.ipynb
 Visualize the detection result. We chose the three most accurate models.
 
-<img src="./image/img10.PNG" width="420" height="300" align="center">
+<img src="./image/img12.PNG" width="420" height="300" align="center">
 
 ### Example Code
+~~~
+print()
+~~~
+
 ### Execution Screen
 
 1. Upload the image you want to separate the UI components. And choose one of the pre-learned models.
