@@ -34,9 +34,16 @@ To detect UI, we used Mask R-CNN among object detection models.<br>
 ### Example Code
 ### Execution Screen
 
+1. Upload the image you want to separate the UI components. And choose one of the pre-learned models.
+
 <img src="./image/img2.png" width="400" height="200"><img src="./image/img3.png" width="400" height="200">
 
+2. The detection result can be checked after loading time. 
 
+<img src="./image/img4.png" width="300" height="150"><img src="./image/img5.png" width="300" height="150"><img src="./image/img6.png" width="300" height="150">
+
+3. Press the download button to receive the results in the zip file format.
+<br>
 ## Deleteing Text Inside UI Component
 
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
@@ -45,7 +52,9 @@ From the user-entered UI component, it recognizes text part using OCR and remove
 ### Example Code
 ### Execution Screen
 
-If you enter ui component, you can see that the letters disappeared from  after loading.<br>
+1. If you enter ui component, you can see that the letters disappeared from  after loading.<br>
 
 <img src="./image/img7.png" width="300" height="150"><img src="./image/img8.png" width="300" height="150"><img src="./image/img9.png" width="300" height="150">
+
+2. Press the download button to receive the results in the zip file format.
 
