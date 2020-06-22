@@ -29,10 +29,13 @@ IUA is a web application that mainly performs the task of separating the UI of g
 ## UI Component Separation
 The UI components of the image entered by the user are automatically separated using the learned model.<br>
 ### UI Detection<br>
-To detect UI, we used mask r-cnn among object detection models.<br>
+To detect UI, we used Mask R-CNN among object detection models.<br>
 #### Mask R-CNN
 ### Example Code
 ### Execution Screen
+
+<img src="./image/img2.png" width="500" height="200"><img src="./image/img3.png" width="500" height="200">
+
 
 ## Deleteing Text Inside UI Component
 
