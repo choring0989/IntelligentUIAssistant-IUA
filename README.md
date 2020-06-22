@@ -35,8 +35,8 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
 
 - Train Model-train.ipynb
  1. Prepare the custom dataset.
-   - After labeling each image, save it to a dataset file.(train/val)
-   - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
+     - After labeling each image, save it to a dataset file.(train/val)
+     - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
  
    <img src="./image/img11.PNG" width="420" height="300" align="center">
  
