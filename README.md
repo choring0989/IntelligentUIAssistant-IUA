@@ -38,7 +38,7 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
      - After labeling each image, save it to a dataset file.(train/val)
      - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
  
-   <img src="./image/img11.PNG" width="420" height="300" align="center">
+   <img src="./image/img10.PNG" width="420" height="300" align="center"><img src="./image/img11.PNG" width="420" height="300" align="center">
  
  2. Download mask_rcnn_coco.h5 file.[Link](https://github.com/matterport/Mask_RCNN/releases)
  
@@ -54,7 +54,7 @@ Visualize the detection result. We chose the three most accurate models.
 
 <img src="./image/img12.PNG" width="420" height="300" align="center">
 
-### Example Code
+### Example Code - 
 ~~~
 print()
 ~~~
