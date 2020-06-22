@@ -54,9 +54,31 @@ Visualize the detection result. We chose the three most accurate models.
 
 <img src="./image/img12.PNG" width="420" height="300" align="center">
 
-### Example Code - 
+### Example Code - se
 ~~~
-print()
+def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
+    global colors, class_dict
+    load_weights()
+    colors = random_colors(len(class_names))
+    class_dict = {name: color for name, color in zip(class_names, colors)}
+
+    global TRAINED_MASKRCNN_WEIGHTS
+    TRAINED_MASKRCNN_WEIGHTS = TRAINED_MASKRCNN_WEIGHTS_
+    global user_image
+    user_image = user_image_
+    print("model name(seperate_ui): ", TRAINED_MASKRCNN_WEIGHTS)
+    print("image name(seperate_ui)", user_image)
+
+    for filename in os.listdir(IMG_DIR):
+        if (filename == user_image):
+            # print(filename)
+            test_image = cv2.imread(os.path.join(IMG_DIR, filename))
+            results = model.detect([test_image], verbose=0)
+            r = results[0]
+            result, number_of_instances = display_instances(
+                test_image, r['rois'], r['masks'], r['class_ids'], class_names, r['scores']
+            )
+            cv2.imwrite(RES_DIR + "/" + filename, result)
 ~~~
 
 ### Execution Screen
