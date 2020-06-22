@@ -91,6 +91,8 @@ Set parameters and run seperate_ui.py
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
 
 ### Tesseract-ORC
+Tesseract is an open source OCR engine.[Tesseract OCR](https://github.com/tesseract-ocr/tesseract)<br>
+
 
 ### Example Code - Find text area
 ~~~
