@@ -1,7 +1,7 @@
 # IntelligentUIAssistant-IUA
 IUA is a web application that mainly performs the task of separating the UI of graphic components.<br>
 ![main_screen](./image/sreenshot1.png)
-## The server environment for execution is:<br>
+### The server environment for execution is:<br>
 > * Python 3.6<br>
 > * tensorflow-gpu 1.15.0<br>
 > * keras 2.2.5<br>
@@ -11,8 +11,7 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * Python google.cloud<br>
 > * Python websockets<br>
 > * Python zipfile37<br>
-<br><br>
-## Used library
+### Used library
 > * numpy<br>
 > * scipy<br>
 > * Pillow<br>
