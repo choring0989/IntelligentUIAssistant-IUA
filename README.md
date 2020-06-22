@@ -35,22 +35,22 @@ This project utilized the code here. [Mask-RCNN](https://github.com/matterport/M
 
 - Train Model-train.ipynb
  1. Prepare the custom dataset.
- - After labeling each image, save it to a dataset file.(train/val)
- - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
+   - After labeling each image, save it to a dataset file.(train/val)
+   - Use this link to proceed with labeling.[Labeling](http://www.robots.ox.ac.uk/~vgg/software/via/via-1.0.6.html)
  
- <img src="./image/img11.PNG" width="420" height="300">
+   <img src="./image/img11.PNG" width="420" height="300" align="center">
  
  2. Install tensorflow-gpu = 1.15.0 and keras=2.2.5.
- > pip install tensorflow-gpu==1.15.0<br>
- > pip install keras==2.2.5<br>
+   > pip install tensorflow-gpu==1.15.0<br>
+   > pip install keras==2.2.5<br>
  
  3. Train Custom Dataset
- > python ui.py train --dataset='path of dataset' --weights=coco  
+   > python ui.py train --dataset='path of dataset' --weights=coco  
   
 - Validate Model-validation.ipynb
 Visualize the detection result. We chose the three most accurate models.
 
-<img src="./image/img10.PNG" width="420" height="300">
+<img src="./image/img10.PNG" width="420" height="300" align="center">
 
 ### Example Code
 ### Execution Screen
