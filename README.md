@@ -11,7 +11,7 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * Python google.cloud<br>
 > * Python websockets<br>
 > * Python zipfile37<br>
-<br><br>
+<br>
 ## Used library
 > * numpy<br>
 > * scipy<br>
@@ -25,3 +25,4 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * h5py<br>
 > * imgaug<br>
 > * IPython[all]<br>
+<br>
