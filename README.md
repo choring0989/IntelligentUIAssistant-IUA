@@ -17,6 +17,7 @@ IUA is a web application that mainly performs the task of separating the UI of g
 > * Pillow<br>
 > * cython<br>
 > * matplotlib<br>
+> * pytesseract<br>
 > * scikit-image<br>
 > * tensorflow>=1.3.0<br>
 > * keras>=2.0.8<br>
