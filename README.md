@@ -80,6 +80,9 @@ def main(TRAINED_MASKRCNN_WEIGHTS_, user_image_):
             )
             cv2.imwrite(RES_DIR + "/" + filename, result)
 ~~~
+> TRAINED_MASKRCNN_WEIGHTS_: Take over the trained model you want to use.
+> user_image_: Take over the image name that you want to separate UI.
+- Set parameters and run seperate_ui.py
 
 ### Execution Screen
 
