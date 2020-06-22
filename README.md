@@ -1,5 +1,5 @@
 # IntelligentUIAssistant-IUA
-IUA is a web application that mainly performs the task of separating the UI of graphic components.
+IUA is a web application that mainly performs the task of separating the UI of graphic components.<br>
 ![main_screen](./image/screenshot1.png)
 <br><br>
 ## The server environment for execution is:<br>
