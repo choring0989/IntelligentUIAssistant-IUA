@@ -30,13 +30,14 @@ The UI components of the image entered by the user are automatically separated u
 ### UI Detection<br>
 To detect UI, we used mask r-cnn among object detection models.<br>
 #### Mask R-CNN
-## Example Code
-## Execution Screen
+### Example Code
+### Execution Screen
 
 ## Deleteing Text Inside UI Component
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
 ### Tesseract-ORC
-## Example Code
-## Execution Screen
+### Example Code
+### Execution Screen
+If you enter ui component, you can see that the letters disappeared from  after loading.<br>
 <img src="./image/img7.png" width="300" height="190"><img src="./image/img8.png" width="300" height="190"><img src="./image/img9.png" width="300" height="190">
 
