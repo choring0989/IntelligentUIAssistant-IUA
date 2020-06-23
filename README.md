@@ -154,3 +154,4 @@ firebase_admin.initialize_app(cred, {
 ~~~
 
 > The structure of the firebase storage used in this project<br>
+<img src="./image/db.jpg" width="820">
