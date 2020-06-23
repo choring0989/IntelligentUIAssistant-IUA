@@ -139,3 +139,18 @@ Set parameters and run then you can see the text area.
 <img src="./image/img7.png" width="290" height="150"><img src="./image/img8.png" width="290" height="150"><img src="./image/img9.png" width="290" height="150">
 
 2. Press the download button to receive the results in the zip file format.
+
+
+### Database connection (Firebase)
+*/edit_ui/accessFIREBASE.py*
+~~~
+# firebase authentication
+cred = credentials.Certificate(
+    "<Enter here the local path where you saved your Firebase access token(.json)>")
+firebase_admin.initialize_app(cred, {
+    'databaseURL': '<Your Firebase address>',
+    'storageBucket': '<Your Firebase storage address>',
+})
+~~~
+
+> The structure of the firebase storage used in this project<br>
