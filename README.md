@@ -140,8 +140,9 @@ Set parameters and run then you can see the text area.
 
 2. Press the download button to receive the results in the zip file format.
 
+<hr>
 
-### Database connection (Firebase)
+## Database connection (Firebase)
 */edit_ui/accessFIREBASE.py*
 ~~~
 # firebase authentication
