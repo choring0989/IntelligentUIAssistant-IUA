@@ -152,6 +152,20 @@ firebase_admin.initialize_app(cred, {
     'storageBucket': '<Your Firebase storage address>',
 })
 ~~~
+*/NewHome/index.html*
+~~~
+var firebaseConfig = {
+				apiKey : "<Your Firebase apikey>",
+				authDomain : "<Your Firebase authDomain>",
+				databaseURL : "<Your Firebase databaseURL>",
+				projectId : "<Your Firebase projectId>",
+				storageBucket : "<Your Firebase storageBucket>",
+				messagingSenderId : "<Your Firebase messagingSenderId>",
+				appId : "<Your Firebase appId>",
+				measurementId : "<Your Firebase measurementId>"
+			};
+~~~
+See official documentation: https://firebase.google.com/docs/storage/web/start?hl=ko
 
 > The structure of the firebase storage used in this project<br>
-<img src="./image/db.jpg" width="820">
+<img src="./image/db.jpg" width="820"><br><br>
