@@ -88,7 +88,7 @@ Set parameters and run seperate_ui.py
 <img src="./image/img4.png" width="290" height="150"><img src="./image/img5.png" width="290" height="150"><img src="./image/img6.png" width="290" height="150">
 
 3. Press the download button to receive the results in the zip file format.
-## Deleteing Text Inside UI Component
+## Deleting Text Inside UI Component
 
 From the user-entered UI component, it recognizes text part using OCR and removes the text.<br>
 
