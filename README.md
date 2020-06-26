@@ -1,5 +1,6 @@
 # IntelligentUIAssistant-IUA
 IUA is a web application that mainly performs the task of separating the UI of graphic components.<br>
+* YouTube: https://youtu.be/oq9aFRvN7gk<br>
 
 ![main_screen](./image/img1.png)
 ### The server environment for execution is:<br>
