@@ -1,550 +1,545 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>IUA</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<!-- file pond-->
-		<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
 
-		<!-- include jQuery library -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>IUA</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- file pond-->
+	<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
 
-		<!-- include FilePond library -->
-		<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+	<!-- include jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
-		<!-- include FilePond plugins -->
-		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+	<!-- include FilePond library -->
+	<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
 
-		<!-- include FilePond jQuery adapter -->
-		<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+	<!-- include FilePond plugins -->
+	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
 
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
-		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+	<!-- include FilePond jQuery adapter -->
+	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
-		<!-- TODO: Add SDKs for Firebase products that you want to use
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
 		https://firebase.google.com/docs/web/setup#available-libraries -->
-		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
-		<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
-		<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+	<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
 
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav justify-content-center">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								<li class="nav-item"><a href="#auto" class="tickets_btn">Free Trial</a></li>
-							</ul>
-						</div> 
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container box_1620">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-center">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item"><a href="#autoSeparation" class="tickets_btn">Free Trial</a></li>
+						</ul>
 					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-            <div class="banner_inner">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-5">
-							<div class="banner_content">
-								<h2>IUA</h2>
-								<h3>Intelligent UI Assistant</h3>
-								<p>It helps to separate UI components. IUA separates UI components that have already merged into one layer. So, It convenient use by various users.</p>
-								<a class="banner_btn" href="#auto">Get Started</a>
-							</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="banner_content">
+							<h2>IUA</h2>
+							<h3>Intelligent UI Assistant</h3>
+							<p>It helps to separate UI components. IUA separates UI components that have already merged
+								into one layer. So, It convenient use by various users.</p>
+							<a class="banner_btn" href="#autoSeparation">Get Started</a>
 						</div>
-						<div class="col-lg-7">
-							<div class="home_left_img">
-								<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
-							</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="home_left_img">
+							<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
 						</div>
 					</div>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Made Life Area =================-->
-		<section class="made_life_area p_120">
-			<div class="container">
-				<div class="made_life_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#auto" role="tab"
-								aria-controls="home" aria-selected="true">Automatic separation</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#dtext" role="tab"
-								aria-controls="profile" aria-selected="false">Deleting text</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="contact-tab" data-toggle="tab" href="#" role="tab" aria-controls="contact"
-								aria-selected="false">coming soon</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="edge-tab" data-toggle="tab" href="#" role="tab" aria-controls="edge"
-								aria-selected="false">coming soon</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade active show" id="auto" role="tabpanel" aria-labelledby="home-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-5">
-									<div class="left_side_text">
-										<h3 style="margin-bottom: 16px;">Automatic<br> UI component separation</h3>
-										<h6>Automatic separation of UI components is performed using machine learning.</h6>
-										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!<br>
-											분리 모델을 선택하고 "File Upload" 버튼을 눌러주세요.<br>
-											결과 파일은 "Download Result" 버튼을 누르면 zip 파일로 다운 가능합니다.<br>
-											(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
-		
-										<div class="file_input">
-											<input type="text" readonly="readonly" title="File Route" id="file_route"
-												value="&nbsp; &nbsp;File route">
-											<label>
-												Select File
-												<input type="file" id="fileupload"
-													onchange="javascript:document.getElementById('file_route').value=this.value">
-											</label>
-										</div>
-										<div class="file_input">
-											<select id="model" name='model' style="float: right;">
-												<option value='mask_rcnn_ui_0005.h5'>Select Model (Default-Coral)</option>
-												<option value='mask_rcnn_ui_0005.h5'>Coral Pink</option>
-												<option value='mask_rcnn_ui_0007.h5'>Orange Pink</option>
-												<option value='mask_rcnn_ui_0009.h5'>Salmon pink</option>
-											</select>
-											<button id="uploadClick" class='main_btn'
+			</div>
+		</div>
+	</section>
+	<!--================End Home Banner Area =================-->
+
+	<!--================Made Life Area =================-->
+	<section class="made_life_area p_120">
+		<div class="container">
+			<div>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#autoSeparation" role="tab"
+							aria-controls="home" aria-selected="true">Automatic separation</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#textDelete" role="tab"
+							aria-controls="profile" aria-selected="false">Deleting text</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#" role="tab"
+							aria-controls="contact" aria-selected="false">Coming soon</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#" role="tab" aria-controls="edge"
+							aria-selected="false">Coming soon</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade active show" id="autoSeparation" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row made_life_text">
+							<div class="col-lg-5">
+								<div class="left_side_text">
+									<h3 style="margin-bottom: 16px;">Automatic<br> UI component separation</h3>
+									<h6>Automatic separation of UI components is performed using machine learning.</h6>
+									<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 추출 및 분리를 시작해보세요!<br>
+										분리 모델을 선택하고 "File Upload" 버튼을 눌러주세요.<br>
+										결과 파일은 "Download Result" 버튼을 누르면 zip 파일로 다운 가능합니다.<br>
+										(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
+
+									<div class="file_input">
+										<input type="text" readonly="readonly" title="File Route" id="fileRoute"
+											value="&nbsp; &nbsp;File route">
+										<label>
+											Select File
+											<input type="file" id="fileupload"
+												onchange="javascript:document.getElementById('fileRoute').value=this.value">
+										</label>
+									</div>
+									<div class="file_input">
+										<select id="model" name='model' style="float: right;">
+											<option value='mask_rcnn_ui_0005.h5'>Select Model (Default-Coral)</option>
+											<option value='mask_rcnn_ui_0005.h5'>Coral Pink</option>
+											<option value='mask_rcnn_ui_0007.h5'>Orange Pink</option>
+											<option value='mask_rcnn_ui_0009.h5'>Salmon pink</option>
+										</select>
+										<button id="uploadClick" class='main_btn'
+											style="margin-top: 2px; border: hidden;">File
+											Upload</button>
+									</div>
+									<button id="result" class='main_btn'
+										style="margin-top: 12px; border: hidden;">Download
+										Result</button>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="row">
+									<img class="col-lg-6" src="img/chart.png" alt="" id='iimage'>
+									<img class="col-lg-6" src="img/chart_.png" alt="" id='output'>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="textDelete" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="row made_life_text">
+							<div class="col-lg-5">
+								<div class="left_side_text">
+									<h3 style="margin-bottom: 16px;">Deleting text<br>inside UI component</h3>
+									<h6>Automatic Deleting text of UI component is performed using machine learning.
+									</h6>
+									<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 내부의 글자를 지워보세요!<br>
+										결과 파일은 "Download Result" 버튼을 누르면 이미지 파일로 다운 가능합니다.<br>
+										(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
+
+									<div class="file_input">
+										<input type="text" readonly="readonly" title="File Route_text"
+											id="fileRoute_text" value="&nbsp; &nbsp;File route">
+										<label>
+											Select File
+											<input type="file" id="fileupload_text"
+												onchange="javascript:document.getElementById('fileRoute_text').value=this.value">
+										</label>
+									</div>
+									<div class="row">
+										<div class="file_input" style="margin-left: 15px;">
+											<button id="uploadClick_text" class='main_btn'
 												style="margin-top: 2px; border: hidden;">File
 												Upload</button>
+											<button id="result_text" class='main_btn'
+												style="margin-top: 12px; border: hidden;">Download
+												Result</button>
 										</div>
-										<button id="result" class='main_btn' style="margin-top: 12px; border: hidden;">Download
-											Result</button>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="row">
-										<img class="col-lg-6" src="img/chart.png" alt="" id='iimage'>
-										<img class="col-lg-6" src="img/chart_.png" alt="" id='output'>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="tab-pane fade" id="dtext" role="tabpanel" aria-labelledby="profile-tab">
-							<div class="row made_life_text">
-								<div class="col-lg-5">
-									<div class="left_side_text">
-										<h3 style="margin-bottom: 16px;">Deleting text<br>inside UI component</h3>
-										<h6>Automatic Deleting text of UI component is performed using machine learning.</h6>
-										<p>아래 "Select File" 버튼을 눌러서 UI 컴포넌트 내부의 글자를 지워보세요!<br>
-											결과 파일은 "Download Result" 버튼을 누르면 이미지 파일로 다운 가능합니다.<br>
-											(png, jpg 포맷만 지원하며 5MB 이하 파일만 업로드 가능합니다.)</p>
-		
-										<div class="file_input">
-											<input type="text" readonly="readonly" title="File Route_text" id="file_route_text"
-												value="&nbsp; &nbsp;File route">
-											<label>
-												Select File
-												<input type="file" id="fileupload_text"
-													onchange="javascript:document.getElementById('file_route_text').value=this.value">
-											</label>
-										</div>
-										<div class="row">
-											<div class="file_input" style="margin-left: 15px;">
-												<button id="uploadClick_text" class='main_btn'
-													style="margin-top: 2px; border: hidden;">File
-													Upload</button>
-												<button id="result_text" class='main_btn'
-													style="margin-top: 12px; border: hidden;">Download
-													Result</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="row">
-										<img class="col-lg-6" src="img/chart.png" alt="" id='iimage_text'>
-										<img class="col-lg-6" src="img/chart_.png" alt="" id='output_text'>
-									</div>
+							<div class="col-lg-7">
+								<div class="row">
+									<img class="col-lg-6" src="img/chart.png" alt="" id='iimage_text'>
+									<img class="col-lg-6" src="img/chart_.png" alt="" id='output_text'>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-		</section>
-		
-		<script>
-			var firebaseConfig = {
-				apiKey : "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
-				authDomain : "intelligentuiassistant-iua.firebaseapp.com",
-				databaseURL : "https://intelligentuiassistant-iua.firebaseio.com",
-				projectId : "intelligentuiassistant-iua",
-				storageBucket : "intelligentuiassistant-iua.appspot.com",
-				messagingSenderId : "913781734373",
-				appId : "1:913781734373:web:15ea08e4d78b26122b8d0c",
-				measurementId : "G-VYG4RZRNBY"
-			};
-			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
-			firebase.analytics();
+			</div>
+	</section>
 
-			// Create a root reference
-			var storageRef = firebase.storage().ref();
-			var filename, base64data;
-			
-			$('#fileupload').on('propertychange change',
-				function() {
-					var file = $("#fileupload")[0].files[0];
-					filename = file.name;
-					var reader = new FileReader();
-					reader.onload = function(e) {
-						// 변환이 끝나면 reader.result로 옵니다.
-						base64data = reader.result;
-						document.getElementById('iimage').src = base64data;
-						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
-						var data = base64data.split(',')[1];
-						var sendsize = 1024;
-						var filelength = data.length;
-						var pos = 0;
-						var upload = function() {
-							$.ajax({
-								type : 'POST',
-								dataType : 'json',
-								data : {
-									filename : filename,
-									filelength : filelength,
-									filepos : pos,
-									data : data.substring(pos,pos+sendsize)
-								},
-								url : './upload',
-								success : function(data) {
-									console.log("성공")
-									// 전체가 전송될 때까지
-									if (pos < filelength) {
-										// 재귀
-										setTimeout(upload,1);
-									}
-									pos = pos + sendsize;
-									if (pos > filelength) {
-										pos = filelength;}
-									$('#progress').text(pos+ ' / '+ filelength);
-								},
-								error : function(jqXHR,textStatus,errorThrown) {
-								},
-								complete : function(jqXHR,textStatus) {
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyDn2ZgGOSm74iiBPRWIH8Y4oZYzbzDjtnw",
+			authDomain: "intelligentuiassistant-iua.firebaseapp.com",
+			databaseURL: "https://intelligentuiassistant-iua.firebaseio.com",
+			projectId: "intelligentuiassistant-iua",
+			storageBucket: "intelligentuiassistant-iua.appspot.com",
+			messagingSenderId: "913781734373",
+			appId: "1:913781734373:web:15ea08e4d78b26122b8d0c",
+			measurementId: "G-VYG4RZRNBY"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+		// Create a root reference
+		var storageRef = firebase.storage().ref();
+		var filename, base64data;
+
+		$('#fileupload').on('propertychange change',
+			function () {
+				var file = $("#fileupload")[0].files[0];
+				filename = file.name;
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					// 변환이 끝나면 reader.result로 옵니다.
+					base64data = reader.result;
+					document.getElementById('iimage').src = base64data;
+					// 구조는 「data: 파일 타입; base64, 데이터」입니다.
+					var data = base64data.split(',')[1];
+					var sendsize = 1024;
+					var filelength = data.length;
+					var pos = 0;
+					var upload = function () {
+						$.ajax({
+							type: 'POST',
+							dataType: 'json',
+							data: {
+								filename: filename,
+								filelength: filelength,
+								filepos: pos,
+								data: data.substring(pos, pos + sendsize)
+							},
+							url: './upload',
+							success: function (data) {
+								console.log("성공")
+								// 전체가 전송될 때까지
+								if (pos < filelength) {
+									// 재귀
+									setTimeout(upload, 1);
 								}
-							});
-						};
-						setTimeout(upload, 1);
-					}
-					// base64로 넘깁니다.
-					reader.readAsDataURL(file);
-				});
-
-
-				// UI 분리하기
-
-				var download_url="";
-
-				$('#uploadClick').on('click', function () {
-					var img = document.getElementById('output');
-					var ts = new Date().getTime();
-					var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
-					var model = document.getElementById("model")
-					console.log(model.options[model.selectedIndex].value)
-					var errorBit = 0
-					
-					storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
-						function (snapshot) {
-							var webSocket = new WebSocket("ws://localhost:9998");
-							img.src = "img/loading.gif"
-							// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
-							// 소켓 접속이 되면 호출되는 함수
-							webSocket.onopen = function (message) {
-								console.log("서버접속");
-								webSocket.send("SP&"+ ts + '.' + filename.split('.')[1] + "&" + model.options[model.selectedIndex].value);
-								//SP -> separation
-							};
-							// 소켓 접속이 끝나면 호출되는 함수
-							webSocket.onclose = function (message) {
-								if(errorBit === 0){
-									console.log("연결해제");
-									//document.getElementById('output').src = 'img/train.png';
-									storageRef.child(newFilename).getDownloadURL().then(function (url) {
-										// `url` is the download URL for 'images/stars.jpg'
-
-										// This can be downloaded directly:
-										var xhr = new XMLHttpRequest();
-										xhr.responseType = 'blob';
-										xhr.onload = function (event) {
-											var blob = xhr.response;
-										};
-										xhr.open('GET', url);
-										xhr.send();
-
-										// Or inserted into an <img> element:
-										img.src = url;
-										var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
-									});
-									storageRef.child('zip/' + ts + '.zip').getDownloadURL().then(function (url) {
-										download_url = url;
-									});
+								pos = pos + sendsize;
+								if (pos > filelength) {
+									pos = filelength;
 								}
-								else if(errorBit === 1){
-									var alt = alert("현재 서버가 동작하지 않습니다.");
-									img.src = "img/chart_.png"
-								}
-								else if(errorBit === 2){
-									var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
-									img.src = "img/chart_.png"
-								}
-							};
-							// 소켓 통신 중에 에러가 발생되면 호출되는 함수
-							webSocket.onerror = function (message) {
-								console.log("통신에러");
-								errorBit = 1;
-							};
-							// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
-							webSocket.onmessage = function (message) {
-								if (message.data == "success"){
-									webSocket.close();
-									console.log("연결닫음");
-								}
-								else{
-									webSocket.close();
-									console.log("프로세싱에러");
-									errorBit = 2;
-								}
-							};
+								$('#progress').text(pos + ' / ' + filelength);
+							},
+							error: function (jqXHR, textStatus, errorThrown) {
+							},
+							complete: function (jqXHR, textStatus) {
+							}
 						});
-				});
-			
-			$('#result').on('click', function() {
-				window.open(download_url);
+					};
+					setTimeout(upload, 1);
+				}
+				// base64로 넘깁니다.
+				reader.readAsDataURL(file);
 			});
 
 
-			// 텍스트 도려내기
+		// UI 분리하기
 
-			$('#fileupload_text').on('propertychange change',
-				function() {
-					var file = $("#fileupload_text")[0].files[0];
-					filename = file.name;
-					var reader = new FileReader();
-					reader.onload = function(e) {
-						// 변환이 끝나면 reader.result로 옵니다.
-						base64data = reader.result;
-						document.getElementById('iimage_text').src = base64data;
-						// 구조는 「data: 파일 타입; base64, 데이터」입니다.
-						var data = base64data.split(',')[1];
-						var sendsize = 1024;
-						var filelength = data.length;
-						var pos = 0;
-						var upload = function() {
-							$.ajax({
-								type : 'POST',
-								dataType : 'json',
-								data : {
-									filename : filename,
-									filelength : filelength,
-									filepos : pos,
-									data : data.substring(pos,pos+sendsize)
-								},
-								url : './upload',
-								success : function(data) {
-									console.log("성공")
-									// 전체가 전송될 때까지
-									if (pos < filelength) {
-										// 재귀
-										setTimeout(upload,1);
-									}
-									pos = pos + sendsize;
-									if (pos > filelength) {
-										pos = filelength;}
-									$('#progress').text(pos+ ' / '+ filelength);
-								},
-								error : function(jqXHR,textStatus,errorThrown) {
-								},
-								complete : function(jqXHR,textStatus) {
-								}
+		var download_url = "";
+
+		$('#uploadClick').on('click', function () {
+			var img = document.getElementById('output');
+			var ts = new Date().getTime();
+			var newFilename = 'output/' + ts + '.' + filename.split('.')[1]
+			var model = document.getElementById("model")
+			console.log(model.options[model.selectedIndex].value)
+			var errorBit = 0
+
+			storageRef.child('images/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
+				function (snapshot) {
+					var webSocket = new WebSocket("ws://localhost:9998");
+					img.src = "img/loading.gif"
+					// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
+					// 소켓 접속이 되면 호출되는 함수
+					webSocket.onopen = function (message) {
+						console.log("서버접속");
+						webSocket.send("SP&" + ts + '.' + filename.split('.')[1] + "&" + model.options[model.selectedIndex].value);
+						//SP -> separation
+					};
+					// 소켓 접속이 끝나면 호출되는 함수
+					webSocket.onclose = function (message) {
+						if (errorBit === 0) {
+							console.log("연결해제");
+							//document.getElementById('output').src = 'img/train.png';
+							storageRef.child(newFilename).getDownloadURL().then(function (url) {
+								// `url` is the download URL for 'images/stars.jpg'
+
+								// This can be downloaded directly:
+								var xhr = new XMLHttpRequest();
+								xhr.responseType = 'blob';
+								xhr.onload = function (event) {
+									var blob = xhr.response;
+								};
+								xhr.open('GET', url);
+								xhr.send();
+
+								// Or inserted into an <img> element:
+								img.src = url;
+								var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
 							});
-						};
-						setTimeout(upload, 1);
-					}
-					// base64로 넘깁니다.
-					reader.readAsDataURL(file);
+							storageRef.child('zip/' + ts + '.zip').getDownloadURL().then(function (url) {
+								download_url = url;
+							});
+						}
+						else if (errorBit === 1) {
+							var alt = alert("현재 서버가 동작하지 않습니다.");
+							img.src = "img/chart_.png"
+						}
+						else if (errorBit === 2) {
+							var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
+							img.src = "img/chart_.png"
+						}
+					};
+					// 소켓 통신 중에 에러가 발생되면 호출되는 함수
+					webSocket.onerror = function (message) {
+						console.log("통신에러");
+						errorBit = 1;
+					};
+					// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
+					webSocket.onmessage = function (message) {
+						if (message.data == "success") {
+							webSocket.close();
+							console.log("연결닫음");
+						}
+						else {
+							webSocket.close();
+							console.log("프로세싱에러");
+							errorBit = 2;
+						}
+					};
 				});
+		});
 
-			var download_url_text="";
+		$('#result').on('click', function () {
+			window.open(download_url);
+		});
 
-			$('#uploadClick_text').on('click', function () {
-					var img = document.getElementById('output_text');
-					var ts = new Date().getTime();
-					var newFilename = 'output_text/' + ts + '.' + filename.split('.')[1]
-					var model = "none"
-					var errorBit = 0
-					
-					storageRef.child('images_text/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
-						function (snapshot) {
-							var webSocket = new WebSocket("ws://localhost:9998");
-							img.src = "img/loading.gif"
-							// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
-							// 소켓 접속이 되면 호출되는 함수
-							webSocket.onopen = function (message) {
-								console.log("서버접속");
-								webSocket.send("TD&"+ ts + '.' + filename.split('.')[1] + "&" + model);
-								//TD -> text delete
-							};
-							// 소켓 접속이 끝나면 호출되는 함수
-							webSocket.onclose = function (message) {
-								if(errorBit === 0){
-									console.log("연결해제");
-									storageRef.child(newFilename).getDownloadURL().then(function (url) {
-										var xhr = new XMLHttpRequest();
-										xhr.responseType = 'blob';
-										xhr.onload = function (event) {
-											var blob = xhr.response;
-										};
-										xhr.open('GET', url);
-										xhr.send();
 
-										// Or inserted into an <img> element:
-										img.src = url;
-										download_url_text = url;
-										var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
-									});
+		// 텍스트 도려내기
+
+		$('#fileupload_text').on('propertychange change',
+			function () {
+				var file = $("#fileupload_text")[0].files[0];
+				filename = file.name;
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					// 변환이 끝나면 reader.result로 옵니다.
+					base64data = reader.result;
+					document.getElementById('iimage_text').src = base64data;
+					// 구조는 「data: 파일 타입; base64, 데이터」입니다.
+					var data = base64data.split(',')[1];
+					var sendsize = 1024;
+					var filelength = data.length;
+					var pos = 0;
+					var upload = function () {
+						$.ajax({
+							type: 'POST',
+							dataType: 'json',
+							data: {
+								filename: filename,
+								filelength: filelength,
+								filepos: pos,
+								data: data.substring(pos, pos + sendsize)
+							},
+							url: './upload',
+							success: function (data) {
+								console.log("성공")
+								// 전체가 전송될 때까지
+								if (pos < filelength) {
+									// 재귀
+									setTimeout(upload, 1);
 								}
-								else if(errorBit === 1){
-									var alt = alert("현재 서버가 동작하지 않습니다.");
-									img.src = "img/chart_.png"
+								pos = pos + sendsize;
+								if (pos > filelength) {
+									pos = filelength;
 								}
-								else if(errorBit === 2){
-									var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
-									img.src = "img/chart_.png"
-								}
-							};
-							// 소켓 통신 중에 에러가 발생되면 호출되는 함수
-							webSocket.onerror = function (message) {
-								console.log("통신에러");
-								errorBit = 1;
-							};
-							// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
-							webSocket.onmessage = function (message) {
-								if (message.data == "success"){
-									webSocket.close();
-									console.log("연결닫음");
-								}
-								else{
-									webSocket.close();
-									console.log("프로세싱에러");
-									errorBit = 2;
-								}
-							};
+								$('#progress').text(pos + ' / ' + filelength);
+							},
+							error: function (jqXHR, textStatus, errorThrown) {
+							},
+							complete: function (jqXHR, textStatus) {
+							}
 						});
-				});
-			
-			$('#result_text').on('click', function() {
-				window.open(download_url_text);
+					};
+					setTimeout(upload, 1);
+				}
+				// base64로 넘깁니다.
+				reader.readAsDataURL(file);
 			});
-			
-			</script>
-        <!--================End Made Life Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About We</h3>
-        					</div>
-							<p>Gachon University Department of Software<br>
+
+		var download_url_text = "";
+
+		$('#uploadClick_text').on('click', function () {
+			var img = document.getElementById('output_text');
+			var ts = new Date().getTime();
+			var newFilename = 'output_text/' + ts + '.' + filename.split('.')[1]
+			var model = "none"
+			var errorBit = 0
+
+			storageRef.child('images_text/' + ts + '.' + filename.split('.')[1]).putString(base64data, 'data_url').then(
+				function (snapshot) {
+					var webSocket = new WebSocket("ws://localhost:9998");
+					img.src = "img/loading.gif"
+					// 웹 서버와의 통신을 주고 받은 결과를 출력할 오브젝트를 가져옵니다.
+					// 소켓 접속이 되면 호출되는 함수
+					webSocket.onopen = function (message) {
+						console.log("서버접속");
+						webSocket.send("TD&" + ts + '.' + filename.split('.')[1] + "&" + model);
+						//TD -> text delete
+					};
+					// 소켓 접속이 끝나면 호출되는 함수
+					webSocket.onclose = function (message) {
+						if (errorBit === 0) {
+							console.log("연결해제");
+							storageRef.child(newFilename).getDownloadURL().then(function (url) {
+								var xhr = new XMLHttpRequest();
+								xhr.responseType = 'blob';
+								xhr.onload = function (event) {
+									var blob = xhr.response;
+								};
+								xhr.open('GET', url);
+								xhr.send();
+
+								// Or inserted into an <img> element:
+								img.src = url;
+								download_url_text = url;
+								var alt = alert("업로드 완료! '확인'을 누르면 결과를 확인할 수 있습니다.");
+							});
+						}
+						else if (errorBit === 1) {
+							var alt = alert("현재 서버가 동작하지 않습니다.");
+							img.src = "img/chart_.png"
+						}
+						else if (errorBit === 2) {
+							var alt = alert("이미지 처리 작업 중에 문제가 발생했습니다.");
+							img.src = "img/chart_.png"
+						}
+					};
+					// 소켓 통신 중에 에러가 발생되면 호출되는 함수
+					webSocket.onerror = function (message) {
+						console.log("통신에러");
+						errorBit = 1;
+					};
+					// 소켓 서버로 부터 메시지가 오면 호출되는 함수.
+					webSocket.onmessage = function (message) {
+						if (message.data == "success") {
+							webSocket.close();
+							console.log("연결닫음");
+						}
+						else {
+							webSocket.close();
+							console.log("프로세싱에러");
+							errorBit = 2;
+						}
+					};
+				});
+		});
+
+		$('#result_text').on('click', function () {
+			window.open(download_url_text);
+		});
+
+	</script>
+	<!--================End Made Life Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area p_120">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3>About</h3>
+						</div>
+						<p>Gachon University Department of Software<br>
 							Lee Jian (<a href="https://github.com/choring0989">https://github.com/choring0989</a>)<br>
 							Park Sumin (<a href="https://github.com/Sumin00">https://github.com/Sumin00</a>)
-							</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope-min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+						</p>
+						<p>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+							template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/gmaps.min.js"></script>
+</body>
+
 </html>
